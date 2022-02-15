@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_8013C318
-func_8013C318:
+.global ftPurin_OnDeath
+ftPurin_OnDeath:
 /* 8013C318 00138EF8  7C 08 02 A6 */	mflr r0
 /* 8013C31C 00138EFC  38 80 00 00 */	li r4, 0
 /* 8013C320 00138F00  90 01 00 04 */	stw r0, 4(r1)
@@ -1127,8 +1127,8 @@ lbl_8013D21C:
 /* 8013D22C 00139E0C  7C 08 03 A6 */	mtlr r0
 /* 8013D230 00139E10  4E 80 00 20 */	blr 
 
-.global func_8013D234
-func_8013D234:
+.global ftPurin_SpecialS
+ftPurin_SpecialS:
 /* 8013D234 00139E14  7C 08 02 A6 */	mflr r0
 /* 8013D238 00139E18  38 80 01 6B */	li r4, 0x16b
 /* 8013D23C 00139E1C  90 01 00 04 */	stw r0, 4(r1)

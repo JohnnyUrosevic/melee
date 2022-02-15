@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_801392DC
-func_801392DC:
+.global ftZelda_OnDeath
+ftZelda_OnDeath:
 /* 801392DC 00135EBC  7C 08 02 A6 */	mflr r0
 /* 801392E0 00135EC0  38 80 00 00 */	li r4, 0
 /* 801392E4 00135EC4  90 01 00 04 */	stw r0, 4(r1)
@@ -2573,8 +2573,8 @@ lbl_8013B618:
 /* 8013B630 00138210  7C 08 03 A6 */	mtlr r0
 /* 8013B634 00138214  4E 80 00 20 */	blr 
 
-.global func_8013B638
-func_8013B638:
+.global ftZelda_SpecialS
+ftZelda_SpecialS:
 /* 8013B638 00138218  7C 08 02 A6 */	mflr r0
 /* 8013B63C 0013821C  38 80 01 57 */	li r4, 0x157
 /* 8013B640 00138220  90 01 00 04 */	stw r0, 4(r1)

@@ -204,8 +204,8 @@ lbl_8011EF84:
 /* 8011EFE0 0011BBC0  7C 08 03 A6 */	mtlr r0
 /* 8011EFE4 0011BBC4  4E 80 00 20 */	blr 
 
-.global func_8011EFE8
-func_8011EFE8:
+.global ftPopo_OnDeath
+ftPopo_OnDeath:
 /* 8011EFE8 0011BBC8  7C 08 02 A6 */	mflr r0
 /* 8011EFEC 0011BBCC  38 80 00 00 */	li r4, 0
 /* 8011EFF0 0011BBD0  90 01 00 04 */	stw r0, 4(r1)
@@ -918,8 +918,8 @@ lbl_8011F994:
 /* 8011F994 0011C574  38 60 00 01 */	li r3, 1
 /* 8011F998 0011C578  4E 80 00 20 */	blr 
 
-.global func_8011F99C
-func_8011F99C:
+.global ftIceClimber_SpecialS
+ftIceClimber_SpecialS:
 /* 8011F99C 0011C57C  7C 08 02 A6 */	mflr r0
 /* 8011F9A0 0011C580  38 80 00 01 */	li r4, 1
 /* 8011F9A4 0011C584  90 01 00 04 */	stw r0, 4(r1)
@@ -4767,8 +4767,8 @@ ftNana_OnLoad:
 /* 80122F20 0011FB00  7C 08 03 A6 */	mtlr r0
 /* 80122F24 0011FB04  4E 80 00 20 */	blr 
 
-.global func_80122F28
-func_80122F28:
+.global ftNana_OnDeath
+ftNana_OnDeath:
 /* 80122F28 0011FB08  7C 08 02 A6 */	mflr r0
 /* 80122F2C 0011FB0C  38 80 00 00 */	li r4, 0
 /* 80122F30 0011FB10  90 01 00 04 */	stw r0, 4(r1)

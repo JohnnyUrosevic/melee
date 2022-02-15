@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_801422E8
-func_801422E8:
+.global ftLuigi_OnDeath
+ftLuigi_OnDeath:
 /* 801422E8 0013EEC8  7C 08 02 A6 */	mflr r0
 /* 801422EC 0013EECC  38 80 00 00 */	li r4, 0
 /* 801422F0 0013EED0  90 01 00 04 */	stw r0, 4(r1)
@@ -613,8 +613,8 @@ lbl_80142B00:
 /* 80142B0C 0013F6EC  7C 08 03 A6 */	mtlr r0
 /* 80142B10 0013F6F0  4E 80 00 20 */	blr 
 
-.global func_80142B14
-func_80142B14:
+.global ftLuigi_SpecialS
+ftLuigi_SpecialS:
 /* 80142B14 0013F6F4  7C 08 02 A6 */	mflr r0
 /* 80142B18 0013F6F8  38 80 01 57 */	li r4, 0x157
 /* 80142B1C 0013F6FC  90 01 00 04 */	stw r0, 4(r1)

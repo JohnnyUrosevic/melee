@@ -775,8 +775,8 @@ lbl_8010E190:
 /* 8010E1BC 0010AD9C  7C 08 03 A6 */	mtlr r0
 /* 8010E1C0 0010ADA0  4E 80 00 20 */	blr 
 
-.global func_8010E1C4
-func_8010E1C4:
+.global ftDonkey_SpecialS
+ftDonkey_SpecialS:
 /* 8010E1C4 0010ADA4  7C 08 02 A6 */	mflr r0
 /* 8010E1C8 0010ADA8  38 80 01 7B */	li r4, 0x17b
 /* 8010E1CC 0010ADAC  90 01 00 04 */	stw r0, 4(r1)

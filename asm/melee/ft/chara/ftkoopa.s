@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_80132A0C
-func_80132A0C:
+.global ftKoopa_OnDeath
+ftKoopa_OnDeath:
 /* 80132A0C 0012F5EC  7C 08 02 A6 */	mflr r0
 /* 80132A10 0012F5F0  38 80 00 00 */	li r4, 0
 /* 80132A14 0012F5F4  90 01 00 04 */	stw r0, 4(r1)
@@ -393,8 +393,8 @@ lbl_80132EE0:
 /* 80132EF4 0012FAD4  7C 08 03 A6 */	mtlr r0
 /* 80132EF8 0012FAD8  4E 80 00 20 */	blr 
 
-.global func_80132EFC
-func_80132EFC:
+.global ftKoopa_SpecialS
+ftKoopa_SpecialS:
 /* 80132EFC 0012FADC  7C 08 02 A6 */	mflr r0
 /* 80132F00 0012FAE0  38 80 01 5B */	li r4, 0x15b
 /* 80132F04 0012FAE4  90 01 00 04 */	stw r0, 4(r1)

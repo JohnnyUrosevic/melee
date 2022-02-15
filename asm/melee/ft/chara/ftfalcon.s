@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_800E2888
-func_800E2888:
+.global ftCFalcon_OnDeath
+ftCFalcon_OnDeath:
 /* 800E2888 000DF468  7C 08 02 A6 */	mflr r0
 /* 800E288C 000DF46C  38 80 00 00 */	li r4, 0
 /* 800E2890 000DF470  90 01 00 04 */	stw r0, 4(r1)
@@ -758,8 +758,8 @@ func_800E3278:
 /* 800E32A8 000DFE88  7C 08 03 A6 */	mtlr r0
 /* 800E32AC 000DFE8C  4E 80 00 20 */	blr 
 
-.global func_800E32B0
-func_800E32B0:
+.global ftCFalcon_SpecialS
+ftCFalcon_SpecialS:
 /* 800E32B0 000DFE90  7C 08 02 A6 */	mflr r0
 /* 800E32B4 000DFE94  90 01 00 04 */	stw r0, 4(r1)
 /* 800E32B8 000DFE98  38 00 00 00 */	li r0, 0

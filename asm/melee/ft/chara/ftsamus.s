@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_8012832C
-func_8012832C:
+.global ftSamus_OnDeath
+ftSamus_OnDeath:
 /* 8012832C 00124F0C  7C 08 02 A6 */	mflr r0
 /* 80128330 00124F10  38 80 00 00 */	li r4, 0
 /* 80128334 00124F14  90 01 00 04 */	stw r0, 4(r1)
@@ -2216,8 +2216,8 @@ lbl_8012A1AC:
 /* 8012A1D0 00126DB0  7C 08 03 A6 */	mtlr r0
 /* 8012A1D4 00126DB4  4E 80 00 20 */	blr 
 
-.global func_8012A1D8
-func_8012A1D8:
+.global ftSamus_SpecialS
+ftSamus_SpecialS:
 /* 8012A1D8 00126DB8  7C 08 02 A6 */	mflr r0
 /* 8012A1DC 00126DBC  90 01 00 04 */	stw r0, 4(r1)
 /* 8012A1E0 00126DC0  3C 00 43 30 */	lis r0, 0x4330

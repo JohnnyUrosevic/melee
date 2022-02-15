@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_80136258
-func_80136258:
+.global ftMars_OnDeath
+ftMars_OnDeath:
 /* 80136258 00132E38  7C 08 02 A6 */	mflr r0
 /* 8013625C 00132E3C  38 80 00 00 */	li r4, 0
 /* 80136260 00132E40  90 01 00 04 */	stw r0, 4(r1)
@@ -1314,8 +1314,8 @@ lbl_801373E4:
 /* 80137414 00133FF4  7C 08 03 A6 */	mtlr r0
 /* 80137418 00133FF8  4E 80 00 20 */	blr 
 
-.global func_8013741C
-func_8013741C:
+.global ftMars_SpecialS
+ftMars_SpecialS:
 /* 8013741C 00133FFC  7C 08 02 A6 */	mflr r0
 /* 80137420 00134000  90 01 00 04 */	stw r0, 4(r1)
 /* 80137424 00134004  38 00 00 00 */	li r0, 0

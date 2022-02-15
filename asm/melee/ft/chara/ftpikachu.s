@@ -60,8 +60,8 @@ lbl_8012441C:
 /* 8012446C 0012104C  7C 08 03 A6 */	mtlr r0
 /* 80124470 00121050  4E 80 00 20 */	blr 
 
-.global func_80124474
-func_80124474:
+.global ftPikachu_OnDeath
+ftPikachu_OnDeath:
 /* 80124474 00121054  7C 08 02 A6 */	mflr r0
 /* 80124478 00121058  38 80 00 00 */	li r4, 0
 /* 8012447C 0012105C  90 01 00 04 */	stw r0, 4(r1)
@@ -766,8 +766,8 @@ lbl_80124E30:
 /* 80124E30 00121A10  38 21 00 20 */	addi r1, r1, 0x20
 /* 80124E34 00121A14  4E 80 00 20 */	blr 
 
-.global func_80124E38
-func_80124E38:
+.global ftPikachu_SpecialS
+ftPikachu_SpecialS:
 /* 80124E38 00121A18  7C 08 02 A6 */	mflr r0
 /* 80124E3C 00121A1C  38 80 01 57 */	li r4, 0x157
 /* 80124E40 00121A20  90 01 00 04 */	stw r0, 4(r1)

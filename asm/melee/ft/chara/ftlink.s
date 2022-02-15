@@ -14,8 +14,8 @@ lbl_800EAD7C:
 /* 800EAD7C 000E795C  38 60 00 00 */	li r3, 0
 /* 800EAD80 000E7960  4E 80 00 20 */	blr 
 
-.global func_800EAD84
-func_800EAD84:
+.global ftLink_OnDeath
+ftLink_OnDeath:
 /* 800EAD84 000E7964  7C 08 02 A6 */	mflr r0
 /* 800EAD88 000E7968  38 80 00 00 */	li r4, 0
 /* 800EAD8C 000E796C  90 01 00 04 */	stw r0, 4(r1)
@@ -1620,8 +1620,8 @@ lbl_800EC338:
 /* 800EC34C 000E8F2C  7C 08 03 A6 */	mtlr r0
 /* 800EC350 000E8F30  4E 80 00 20 */	blr 
 
-.global func_800EC354
-func_800EC354:
+.global ftLink_SpecialS
+ftLink_SpecialS:
 /* 800EC354 000E8F34  7C 08 02 A6 */	mflr r0
 /* 800EC358 000E8F38  38 80 00 00 */	li r4, 0
 /* 800EC35C 000E8F3C  90 01 00 04 */	stw r0, 4(r1)

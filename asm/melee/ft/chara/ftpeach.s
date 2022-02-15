@@ -924,8 +924,8 @@ lbl_8011C344:
 /* 8011C344 00118F24  90 85 23 40 */	stw r4, 0x2340(r5)
 /* 8011C348 00118F28  4E 80 00 20 */	blr 
 
-.global func_8011C34C
-func_8011C34C:
+.global ftPeach_SpecialS
+ftPeach_SpecialS:
 /* 8011C34C 00118F2C  7C 08 02 A6 */	mflr r0
 /* 8011C350 00118F30  38 80 01 62 */	li r4, 0x162
 /* 8011C354 00118F34  90 01 00 04 */	stw r0, 4(r1)

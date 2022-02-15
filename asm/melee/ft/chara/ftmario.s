@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_800E08CC
-func_800E08CC:
+.global ftMario_OnDeath
+ftMario_OnDeath:
 /* 800E08CC 000DD4AC  7C 08 02 A6 */	mflr r0
 /* 800E08D0 000DD4B0  38 80 00 00 */	li r4, 0
 /* 800E08D4 000DD4B4  90 01 00 04 */	stw r0, 4(r1)
@@ -869,8 +869,8 @@ lbl_800E1448:
 /* 800E1448 000DE028  38 60 00 01 */	li r3, 1
 /* 800E144C 000DE02C  4E 80 00 20 */	blr 
 
-.global func_800E1450
-func_800E1450:
+.global ftMario_SpecialS
+ftMario_SpecialS:
 /* 800E1450 000DE030  7C 08 02 A6 */	mflr r0
 /* 800E1454 000DE034  38 80 01 59 */	li r4, 0x159
 /* 800E1458 000DE038  90 01 00 04 */	stw r0, 4(r1)

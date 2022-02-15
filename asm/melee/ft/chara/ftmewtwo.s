@@ -1772,8 +1772,8 @@ lbl_8014665C:
 /* 801466BC 0014329C  7C 08 03 A6 */	mtlr r0
 /* 801466C0 001432A0  4E 80 00 20 */	blr 
 
-.global func_801466C4
-func_801466C4:
+.global ftMewtwo_SpecialS
+ftMewtwo_SpecialS:
 /* 801466C4 001432A4  7C 08 02 A6 */	mflr r0
 /* 801466C8 001432A8  38 E0 00 00 */	li r7, 0
 /* 801466CC 001432AC  90 01 00 04 */	stw r0, 4(r1)

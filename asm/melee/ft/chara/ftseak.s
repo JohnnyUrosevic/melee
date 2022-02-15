@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_80110094
-func_80110094:
+.global ftSeak_OnDeath
+ftSeak_OnDeath:
 /* 80110094 0010CC74  7C 08 02 A6 */	mflr r0
 /* 80110098 0010CC78  38 80 00 00 */	li r4, 0
 /* 8011009C 0010CC7C  90 01 00 04 */	stw r0, 4(r1)
@@ -1130,8 +1130,8 @@ func_80110F70:
 /* 80111030 0010DC10  90 06 21 BC */	stw r0, 0x21bc(r6)
 /* 80111034 0010DC14  4E 80 00 20 */	blr 
 
-.global func_80111038
-func_80111038:
+.global ftSeak_SpecialS
+ftSeak_SpecialS:
 /* 80111038 0010DC18  7C 08 02 A6 */	mflr r0
 /* 8011103C 0010DC1C  38 80 01 5D */	li r4, 0x15d
 /* 80111040 0010DC20  90 01 00 04 */	stw r0, 4(r1)

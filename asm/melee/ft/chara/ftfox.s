@@ -5268,8 +5268,8 @@ func_800E9ED4:
 /* 800E9EE0 000E6AC0  C0 23 23 74 */	lfs f1, 0x2374(r3)
 /* 800E9EE4 000E6AC4  4E 80 00 20 */	blr 
 
-.global func_800E9EE8
-func_800E9EE8:
+.global ftFox_SpecialS
+ftFox_SpecialS:
 /* 800E9EE8 000E6AC8  7C 08 02 A6 */	mflr r0
 /* 800E9EEC 000E6ACC  38 E0 00 00 */	li r7, 0
 /* 800E9EF0 000E6AD0  90 01 00 04 */	stw r0, 4(r1)

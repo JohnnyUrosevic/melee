@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_8014A250
-func_8014A250:
+.global ftGameWatch_OnDeath
+ftGameWatch_OnDeath:
 /* 8014A250 00146E30  7C 08 02 A6 */	mflr r0
 /* 8014A254 00146E34  38 80 00 00 */	li r4, 0
 /* 8014A258 00146E38  90 01 00 04 */	stw r0, 4(r1)
@@ -426,8 +426,8 @@ func_8014A814:
 /* 8014A820 00147400  90 04 00 00 */	stw r0, 0(r4)
 /* 8014A824 00147404  4E 80 00 20 */	blr 
 
-.global func_8014A828
-func_8014A828:
+.global ftGameWatch_OnAbsorb
+ftGameWatch_OnAbsorb:
 /* 8014A828 00147408  7C 08 02 A6 */	mflr r0
 /* 8014A82C 0014740C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014A830 00147410  94 21 FF F8 */	stwu r1, -8(r1)
@@ -2791,8 +2791,8 @@ lbl_8014C774:
 /* 8014C798 00149378  7C 08 03 A6 */	mtlr r0
 /* 8014C79C 0014937C  4E 80 00 20 */	blr 
 
-.global func_8014C7A0
-func_8014C7A0:
+.global ftGameWatch_SpecialS
+ftGameWatch_SpecialS:
 /* 8014C7A0 00149380  7C 08 02 A6 */	mflr r0
 /* 8014C7A4 00149384  90 01 00 04 */	stw r0, 4(r1)
 /* 8014C7A8 00149388  94 21 FF D8 */	stwu r1, -0x28(r1)
