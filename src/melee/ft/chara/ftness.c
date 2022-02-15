@@ -2,7 +2,7 @@
 
 extern f32 lbl_804D96B0;
 
-void func_801147C0(HSD_GObj* gobj, s32 arg1)
+void ftNess_OnDeath(HSD_GObj* gobj, s32 arg1)
 {
     Fighter* ft = gobj->user_data;
     func_80074A4C(gobj, 0, 0);
@@ -88,7 +88,7 @@ void func_801148F8(HSD_GObj* gobj)
     func_80114CF4(gobj);
 }
 
-void func_8011493C(HSD_GObj* gobj)
+void ftNess_OnAbsorb(HSD_GObj* gobj)
 {
     func_8011B0F8(gobj);
 }
