@@ -2167,8 +2167,8 @@ func_80143FC8:
 /* 8014401C 00140BFC  7C 08 03 A6 */	mtlr r0
 /* 80144020 00140C00  4E 80 00 20 */	blr 
 
-.global func_80144024
-func_80144024:
+.global ftLuigi_SpecialHiAir
+ftLuigi_SpecialHiAir:
 /* 80144024 00140C04  7C 08 02 A6 */	mflr r0
 /* 80144028 00140C08  38 80 01 64 */	li r4, 0x164
 /* 8014402C 00140C0C  90 01 00 04 */	stw r0, 4(r1)

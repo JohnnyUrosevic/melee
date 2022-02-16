@@ -2434,8 +2434,8 @@ lbl_8011D7DC:
 /* 8011D7E8 0011A3C8  7C 08 03 A6 */	mtlr r0
 /* 8011D7EC 0011A3CC  4E 80 00 20 */	blr 
 
-.global func_8011D7F0
-func_8011D7F0:
+.global ftPeach_SpecialHiAir
+ftPeach_SpecialHiAir:
 /* 8011D7F0 0011A3D0  7C 08 02 A6 */	mflr r0
 /* 8011D7F4 0011A3D4  38 80 01 6B */	li r4, 0x16b
 /* 8011D7F8 0011A3D8  90 01 00 04 */	stw r0, 4(r1)

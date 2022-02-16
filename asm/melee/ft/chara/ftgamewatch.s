@@ -4667,8 +4667,8 @@ func_8014E0AC:
 /* 8014E150 0014AD30  7C 08 03 A6 */	mtlr r0
 /* 8014E154 0014AD34  4E 80 00 20 */	blr 
 
-.global func_8014E158
-func_8014E158:
+.global ftGameWatch_SpecialHiAir
+ftGameWatch_SpecialHiAir:
 /* 8014E158 0014AD38  7C 08 02 A6 */	mflr r0
 /* 8014E15C 0014AD3C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014E160 0014AD40  94 21 FF C8 */	stwu r1, -0x38(r1)

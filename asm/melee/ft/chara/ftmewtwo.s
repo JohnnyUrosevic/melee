@@ -304,8 +304,8 @@ func_801451DC:
 /* 80145250 00141E30  7C 08 03 A6 */	mtlr r0
 /* 80145254 00141E34  4E 80 00 20 */	blr 
 
-.global func_80145258
-func_80145258:
+.global ftMewtwo_SpecialHiAir
+ftMewtwo_SpecialHiAir:
 /* 80145258 00141E38  7C 08 02 A6 */	mflr r0
 /* 8014525C 00141E3C  38 80 01 64 */	li r4, 0x164
 /* 80145260 00141E40  90 01 00 04 */	stw r0, 4(r1)

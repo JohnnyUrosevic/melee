@@ -1964,8 +1964,8 @@ func_80125DE8:
 /* 80125E58 00122A38  7C 08 03 A6 */	mtlr r0
 /* 80125E5C 00122A3C  4E 80 00 20 */	blr 
 
-.global func_80125E60
-func_80125E60:
+.global ftPikachu_SpecialHiAir
+ftPikachu_SpecialHiAir:
 /* 80125E60 00122A40  7C 08 02 A6 */	mflr r0
 /* 80125E64 00122A44  38 E0 00 00 */	li r7, 0
 /* 80125E68 00122A48  90 01 00 04 */	stw r0, 4(r1)

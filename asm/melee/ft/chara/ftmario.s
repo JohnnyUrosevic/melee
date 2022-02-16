@@ -1335,8 +1335,8 @@ func_800E1A54:
 /* 800E1AA8 000DE688  7C 08 03 A6 */	mtlr r0
 /* 800E1AAC 000DE68C  4E 80 00 20 */	blr 
 
-.global func_800E1AB0
-func_800E1AB0:
+.global ftMario_SpecialHiAir
+ftMario_SpecialHiAir:
 /* 800E1AB0 000DE690  7C 08 02 A6 */	mflr r0
 /* 800E1AB4 000DE694  38 80 01 5C */	li r4, 0x15c
 /* 800E1AB8 000DE698  90 01 00 04 */	stw r0, 4(r1)

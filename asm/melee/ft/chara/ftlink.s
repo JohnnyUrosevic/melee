@@ -1031,8 +1031,8 @@ func_800EBB1C:
 /* 800EBB78 000E8758  7C 08 03 A6 */	mtlr r0
 /* 800EBB7C 000E875C  4E 80 00 20 */	blr 
 
-.global func_800EBB80
-func_800EBB80:
+.global ftLink_SpecialHiAir
+ftLink_SpecialHiAir:
 /* 800EBB80 000E8760  7C 08 02 A6 */	mflr r0
 /* 800EBB84 000E8764  38 80 01 65 */	li r4, 0x165
 /* 800EBB88 000E8768  90 01 00 04 */	stw r0, 4(r1)

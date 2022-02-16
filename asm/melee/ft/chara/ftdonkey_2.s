@@ -2660,8 +2660,8 @@ func_8010FB1C:
 /* 8010FBF4 0010C7D4  7C 08 03 A6 */	mtlr r0
 /* 8010FBF8 0010C7D8  4E 80 00 20 */	blr 
 
-.global func_8010FBFC
-func_8010FBFC:
+.global ftDonkey_SpecialHiAir
+ftDonkey_SpecialHiAir:
 /* 8010FBFC 0010C7DC  7C 08 02 A6 */	mflr r0
 /* 8010FC00 0010C7E0  38 80 01 7E */	li r4, 0x17e
 /* 8010FC04 0010C7E4  90 01 00 04 */	stw r0, 4(r1)

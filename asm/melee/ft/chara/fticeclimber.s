@@ -2657,8 +2657,8 @@ func_801211B4:
 /* 80121224 0011DE04  7C 08 03 A6 */	mtlr r0
 /* 80121228 0011DE08  4E 80 00 20 */	blr 
 
-.global func_8012122C
-func_8012122C:
+.global ftIceClimber_SpecialHiAir
+ftIceClimber_SpecialHiAir:
 /* 8012122C 0011DE0C  7C 08 02 A6 */	mflr r0
 /* 80121230 0011DE10  90 01 00 04 */	stw r0, 4(r1)
 /* 80121234 0011DE14  94 21 FF D0 */	stwu r1, -0x30(r1)

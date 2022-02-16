@@ -446,8 +446,8 @@ func_80139834:
 /* 801398E0 001364C0  7C 08 03 A6 */	mtlr r0
 /* 801398E4 001364C4  4E 80 00 20 */	blr 
 
-.global func_801398E8
-func_801398E8:
+.global ftZelda_SpecialHiAir
+ftZelda_SpecialHiAir:
 /* 801398E8 001364C8  7C 08 02 A6 */	mflr r0
 /* 801398EC 001364CC  38 80 01 60 */	li r4, 0x160
 /* 801398F0 001364D0  90 01 00 04 */	stw r0, 4(r1)

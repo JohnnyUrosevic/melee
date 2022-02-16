@@ -559,8 +559,8 @@ lbl_8013CA84:
 /* 8013CA90 00139670  7C 08 03 A6 */	mtlr r0
 /* 8013CA94 00139674  4E 80 00 20 */	blr 
 
-.global func_8013CA98
-func_8013CA98:
+.global ftPurin_SpecialHiAir
+ftPurin_SpecialHiAir:
 /* 8013CA98 00139678  7C 08 02 A6 */	mflr r0
 /* 8013CA9C 0013967C  90 01 00 04 */	stw r0, 4(r1)
 /* 8013CAA0 00139680  94 21 FF E0 */	stwu r1, -0x20(r1)

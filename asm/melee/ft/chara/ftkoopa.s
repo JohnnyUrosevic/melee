@@ -3530,8 +3530,8 @@ func_80135A2C:
 /* 80135AFC 001326DC  7C 08 03 A6 */	mtlr r0
 /* 80135B00 001326E0  4E 80 00 20 */	blr 
 
-.global func_80135B04
-func_80135B04:
+.global ftKoopa_SpecialHiAir
+ftKoopa_SpecialHiAir:
 /* 80135B04 001326E4  7C 08 02 A6 */	mflr r0
 /* 80135B08 001326E8  38 80 01 68 */	li r4, 0x168
 /* 80135B0C 001326EC  90 01 00 04 */	stw r0, 4(r1)

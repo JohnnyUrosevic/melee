@@ -3931,8 +3931,8 @@ lbl_80118210:
 /* 80118248 00114E28  7C 08 03 A6 */	mtlr r0
 /* 8011824C 00114E2C  4E 80 00 20 */	blr 
 
-.global func_80118250
-func_80118250:
+.global ftNess_SpecialHiAir
+ftNess_SpecialHiAir:
 /* 80118250 00114E30  7C 08 02 A6 */	mflr r0
 /* 80118254 00114E34  38 80 01 6A */	li r4, 0x16a
 /* 80118258 00114E38  90 01 00 04 */	stw r0, 4(r1)

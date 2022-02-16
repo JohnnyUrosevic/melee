@@ -3180,8 +3180,8 @@ func_8012E2C4:
 /* 8012E334 0012AF14  7C 08 03 A6 */	mtlr r0
 /* 8012E338 0012AF18  4E 80 00 20 */	blr 
 
-.global func_8012E33C
-func_8012E33C:
+.global ftYoshi_SpecialHiAir
+ftYoshi_SpecialHiAir:
 /* 8012E33C 0012AF1C  7C 08 02 A6 */	mflr r0
 /* 8012E340 0012AF20  38 80 01 6D */	li r4, 0x16d
 /* 8012E344 0012AF24  90 01 00 04 */	stw r0, 4(r1)

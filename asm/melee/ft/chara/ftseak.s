@@ -3515,8 +3515,8 @@ func_801130D0:
 /* 80113124 0010FD04  7C 08 03 A6 */	mtlr r0
 /* 80113128 0010FD08  4E 80 00 20 */	blr 
 
-.global func_8011312C
-func_8011312C:
+.global ftSeak_SpecialHiAir
+ftSeak_SpecialHiAir:
 /* 8011312C 0010FD0C  7C 08 02 A6 */	mflr r0
 /* 80113130 0010FD10  38 80 01 66 */	li r4, 0x166
 /* 80113134 0010FD14  90 01 00 04 */	stw r0, 4(r1)

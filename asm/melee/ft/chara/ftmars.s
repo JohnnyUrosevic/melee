@@ -2383,8 +2383,8 @@ func_80138208:
 /* 80138264 00134E44  7C 08 03 A6 */	mtlr r0
 /* 80138268 00134E48  4E 80 00 20 */	blr 
 
-.global func_8013826C
-func_8013826C:
+.global ftMars_SpecialHiAir
+ftMars_SpecialHiAir:
 /* 8013826C 00134E4C  7C 08 02 A6 */	mflr r0
 /* 80138270 00134E50  38 80 01 70 */	li r4, 0x170
 /* 80138274 00134E54  90 01 00 04 */	stw r0, 4(r1)

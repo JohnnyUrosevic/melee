@@ -2616,8 +2616,8 @@ func_8012A674:
 /* 8012A730 00127310  7C 08 03 A6 */	mtlr r0
 /* 8012A734 00127314  4E 80 00 20 */	blr 
 
-.global func_8012A738
-func_8012A738:
+.global ftSamus_SpecialHiAir
+ftSamus_SpecialHiAir:
 /* 8012A738 00127318  7C 08 02 A6 */	mflr r0
 /* 8012A73C 0012731C  38 80 01 62 */	li r4, 0x162
 /* 8012A740 00127320  90 01 00 04 */	stw r0, 4(r1)

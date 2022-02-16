@@ -1974,8 +1974,8 @@ func_800E7238:
 /* 800E72BC 000E3E9C  7C 08 03 A6 */	mtlr r0
 /* 800E72C0 000E3EA0  4E 80 00 20 */	blr 
 
-.global func_800E72C4
-func_800E72C4:
+.global ftFox_SpecialHiAir
+ftFox_SpecialHiAir:
 /* 800E72C4 000E3EA4  7C 08 02 A6 */	mflr r0
 /* 800E72C8 000E3EA8  38 80 01 62 */	li r4, 0x162
 /* 800E72CC 000E3EAC  90 01 00 04 */	stw r0, 4(r1)

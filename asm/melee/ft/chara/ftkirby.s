@@ -4587,8 +4587,8 @@ func_800F2300:
 /* 800F23B0 000EEF90  7C 08 03 A6 */	mtlr r0
 /* 800F23B4 000EEF94  4E 80 00 20 */	blr 
 
-.global func_800F23B8
-func_800F23B8:
+.global ftKirby_SpecialHiAir
+ftKirby_SpecialHiAir:
 /* 800F23B8 000EEF98  7C 08 02 A6 */	mflr r0
 /* 800F23BC 000EEF9C  38 80 01 85 */	li r4, 0x185
 /* 800F23C0 000EEFA0  90 01 00 04 */	stw r0, 4(r1)
