@@ -31,8 +31,8 @@ ftRoy_OnDeath:
 /* 8014EF58 0014BB38  7C 08 03 A6 */	mtlr r0
 /* 8014EF5C 0014BB3C  4E 80 00 20 */	blr 
 
-.global func_8014EF60
-func_8014EF60:
+.global ftRoy_OnItemPickup
+ftRoy_OnItemPickup:
 /* 8014EF60 0014BB40  7C 08 02 A6 */	mflr r0
 /* 8014EF64 0014BB44  90 01 00 04 */	stw r0, 4(r1)
 /* 8014EF68 0014BB48  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -97,8 +97,8 @@ lbl_8014F024:
 /* 8014F038 0014BC18  7C 08 03 A6 */	mtlr r0
 /* 8014F03C 0014BC1C  4E 80 00 20 */	blr 
 
-.global func_8014F040
-func_8014F040:
+.global ftRoy_OnItemInvisible
+ftRoy_OnItemInvisible:
 /* 8014F040 0014BC20  7C 08 02 A6 */	mflr r0
 /* 8014F044 0014BC24  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F048 0014BC28  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -119,8 +119,8 @@ lbl_8014F074:
 /* 8014F080 0014BC60  7C 08 03 A6 */	mtlr r0
 /* 8014F084 0014BC64  4E 80 00 20 */	blr 
 
-.global func_8014F088
-func_8014F088:
+.global ftRoy_OnItemVisible
+ftRoy_OnItemVisible:
 /* 8014F088 0014BC68  7C 08 02 A6 */	mflr r0
 /* 8014F08C 0014BC6C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F090 0014BC70  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -141,8 +141,8 @@ lbl_8014F0BC:
 /* 8014F0C8 0014BCA8  7C 08 03 A6 */	mtlr r0
 /* 8014F0CC 0014BCAC  4E 80 00 20 */	blr 
 
-.global func_8014F0D0
-func_8014F0D0:
+.global ftRoy_OnItemRelease
+ftRoy_OnItemRelease:
 /* 8014F0D0 0014BCB0  7C 08 02 A6 */	mflr r0
 /* 8014F0D4 0014BCB4  38 A0 FF FF */	li r5, -1
 /* 8014F0D8 0014BCB8  90 01 00 04 */	stw r0, 4(r1)

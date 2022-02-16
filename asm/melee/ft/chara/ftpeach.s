@@ -19,8 +19,8 @@ lbl_8011B704:
 /* 8011B738 00118318  7C 08 03 A6 */	mtlr r0
 /* 8011B73C 0011831C  4E 80 00 20 */	blr 
 
-.global func_8011B740
-func_8011B740:
+.global ftPeach_OnItemPickup
+ftPeach_OnItemPickup:
 /* 8011B740 00118320  7C 08 02 A6 */	mflr r0
 /* 8011B744 00118324  90 01 00 04 */	stw r0, 4(r1)
 /* 8011B748 00118328  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -85,8 +85,8 @@ lbl_8011B804:
 /* 8011B818 001183F8  7C 08 03 A6 */	mtlr r0
 /* 8011B81C 001183FC  4E 80 00 20 */	blr 
 
-.global func_8011B820
-func_8011B820:
+.global ftPeach_OnItemInvisible
+ftPeach_OnItemInvisible:
 /* 8011B820 00118400  7C 08 02 A6 */	mflr r0
 /* 8011B824 00118404  90 01 00 04 */	stw r0, 4(r1)
 /* 8011B828 00118408  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -107,8 +107,8 @@ lbl_8011B854:
 /* 8011B860 00118440  7C 08 03 A6 */	mtlr r0
 /* 8011B864 00118444  4E 80 00 20 */	blr 
 
-.global func_8011B868
-func_8011B868:
+.global ftPeach_OnItemVisible
+ftPeach_OnItemVisible:
 /* 8011B868 00118448  7C 08 02 A6 */	mflr r0
 /* 8011B86C 0011844C  90 01 00 04 */	stw r0, 4(r1)
 /* 8011B870 00118450  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -129,8 +129,8 @@ lbl_8011B89C:
 /* 8011B8A8 00118488  7C 08 03 A6 */	mtlr r0
 /* 8011B8AC 0011848C  4E 80 00 20 */	blr 
 
-.global func_8011B8B0
-func_8011B8B0:
+.global ftPeach_OnItemRelease
+ftPeach_OnItemRelease:
 /* 8011B8B0 00118490  7C 08 02 A6 */	mflr r0
 /* 8011B8B4 00118494  38 A0 FF FF */	li r5, -1
 /* 8011B8B8 00118498  90 01 00 04 */	stw r0, 4(r1)
@@ -957,8 +957,8 @@ ftPeach_SpecialS:
 /* 8011C3BC 00118F9C  7C 08 03 A6 */	mtlr r0
 /* 8011C3C0 00118FA0  4E 80 00 20 */	blr 
 
-.global func_8011C3C4
-func_8011C3C4:
+.global ftPeach_SpecialSAir
+ftPeach_SpecialSAir:
 /* 8011C3C4 00118FA4  7C 08 02 A6 */	mflr r0
 /* 8011C3C8 00118FA8  38 80 01 65 */	li r4, 0x165
 /* 8011C3CC 00118FAC  90 01 00 04 */	stw r0, 4(r1)
@@ -1939,8 +1939,8 @@ lbl_8011D100:
 /* 8011D114 00119CF4  7C 08 03 A6 */	mtlr r0
 /* 8011D118 00119CF8  4E 80 00 20 */	blr 
 
-.global func_8011D11C
-func_8011D11C:
+.global ftPeach_SpecialLw
+ftPeach_SpecialLw:
 /* 8011D11C 00119CFC  7C 08 02 A6 */	mflr r0
 /* 8011D120 00119D00  90 01 00 04 */	stw r0, 4(r1)
 /* 8011D124 00119D04  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1988,8 +1988,8 @@ lbl_8011D1AC:
 /* 8011D1BC 00119D9C  7C 08 03 A6 */	mtlr r0
 /* 8011D1C0 00119DA0  4E 80 00 20 */	blr 
 
-.global func_8011D1C4
-func_8011D1C4:
+.global ftPeach_SpecialLwAir
+ftPeach_SpecialLwAir:
 /* 8011D1C4 00119DA4  7C 08 02 A6 */	mflr r0
 /* 8011D1C8 00119DA8  90 01 00 04 */	stw r0, 4(r1)
 /* 8011D1CC 00119DAC  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -2379,8 +2379,8 @@ lbl_8011D71C:
 /* 8011D724 0011A304  7C 08 03 A6 */	mtlr r0
 /* 8011D728 0011A308  4E 80 00 20 */	blr 
 
-.global func_8011D72C
-func_8011D72C:
+.global ftPeach_SpecialHi
+ftPeach_SpecialHi:
 /* 8011D72C 0011A30C  7C 08 02 A6 */	mflr r0
 /* 8011D730 0011A310  38 80 01 69 */	li r4, 0x169
 /* 8011D734 0011A314  90 01 00 04 */	stw r0, 4(r1)
@@ -3311,8 +3311,8 @@ lbl_8011E3C8:
 /* 8011E3C8 0011AFA8  38 60 00 01 */	li r3, 1
 /* 8011E3CC 0011AFAC  4E 80 00 20 */	blr 
 
-.global func_8011E3D0
-func_8011E3D0:
+.global ftPeach_SpecialN
+ftPeach_SpecialN:
 /* 8011E3D0 0011AFB0  7C 08 02 A6 */	mflr r0
 /* 8011E3D4 0011AFB4  38 80 01 6D */	li r4, 0x16d
 /* 8011E3D8 0011AFB8  90 01 00 04 */	stw r0, 4(r1)
@@ -3349,8 +3349,8 @@ func_8011E3D0:
 /* 8011E454 0011B034  7C 08 03 A6 */	mtlr r0
 /* 8011E458 0011B038  4E 80 00 20 */	blr 
 
-.global func_8011E45C
-func_8011E45C:
+.global ftPeach_SpecialNAir
+ftPeach_SpecialNAir:
 /* 8011E45C 0011B03C  7C 08 02 A6 */	mflr r0
 /* 8011E460 0011B040  38 80 01 6F */	li r4, 0x16f
 /* 8011E464 0011B044  90 01 00 04 */	stw r0, 4(r1)

@@ -93,8 +93,8 @@ lbl_80132AF0:
 lbl_80132B38:
 /* 80132B38 0012F718  4E 80 00 20 */	blr 
 
-.global func_80132B3C
-func_80132B3C:
+.global ftKoopa_OnItemPickup
+ftKoopa_OnItemPickup:
 /* 80132B3C 0012F71C  7C 08 02 A6 */	mflr r0
 /* 80132B40 0012F720  90 01 00 04 */	stw r0, 4(r1)
 /* 80132B44 0012F724  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -159,8 +159,8 @@ lbl_80132C00:
 /* 80132C14 0012F7F4  7C 08 03 A6 */	mtlr r0
 /* 80132C18 0012F7F8  4E 80 00 20 */	blr 
 
-.global func_80132C1C
-func_80132C1C:
+.global ftKoopa_OnItemInvisible
+ftKoopa_OnItemInvisible:
 /* 80132C1C 0012F7FC  7C 08 02 A6 */	mflr r0
 /* 80132C20 0012F800  90 01 00 04 */	stw r0, 4(r1)
 /* 80132C24 0012F804  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -181,8 +181,8 @@ lbl_80132C50:
 /* 80132C5C 0012F83C  7C 08 03 A6 */	mtlr r0
 /* 80132C60 0012F840  4E 80 00 20 */	blr 
 
-.global func_80132C64
-func_80132C64:
+.global ftKoopa_OnItemVisible
+ftKoopa_OnItemVisible:
 /* 80132C64 0012F844  7C 08 02 A6 */	mflr r0
 /* 80132C68 0012F848  90 01 00 04 */	stw r0, 4(r1)
 /* 80132C6C 0012F84C  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -203,8 +203,8 @@ lbl_80132C98:
 /* 80132CA4 0012F884  7C 08 03 A6 */	mtlr r0
 /* 80132CA8 0012F888  4E 80 00 20 */	blr 
 
-.global func_80132CAC
-func_80132CAC:
+.global ftKoopa_OnItemRelease
+ftKoopa_OnItemRelease:
 /* 80132CAC 0012F88C  7C 08 02 A6 */	mflr r0
 /* 80132CB0 0012F890  38 A0 FF FF */	li r5, -1
 /* 80132CB4 0012F894  90 01 00 04 */	stw r0, 4(r1)
@@ -434,8 +434,8 @@ ftKoopa_SpecialS:
 /* 80132F8C 0012FB6C  7C 08 03 A6 */	mtlr r0
 /* 80132F90 0012FB70  4E 80 00 20 */	blr 
 
-.global func_80132F94
-func_80132F94:
+.global ftKoopa_SpecialSAir
+ftKoopa_SpecialSAir:
 /* 80132F94 0012FB74  7C 08 02 A6 */	mflr r0
 /* 80132F98 0012FB78  38 80 01 61 */	li r4, 0x161
 /* 80132F9C 0012FB7C  90 01 00 04 */	stw r0, 4(r1)
@@ -2021,8 +2021,8 @@ lbl_801345D8:
 /* 80134604 001311E4  7C 08 03 A6 */	mtlr r0
 /* 80134608 001311E8  4E 80 00 20 */	blr 
 
-.global func_8013460C
-func_8013460C:
+.global ftKoopa_SpecialLw
+ftKoopa_SpecialLw:
 /* 8013460C 001311EC  7C 08 02 A6 */	mflr r0
 /* 80134610 001311F0  90 01 00 04 */	stw r0, 4(r1)
 /* 80134614 001311F4  94 21 FF D0 */	stwu r1, -0x30(r1)
@@ -2062,8 +2062,8 @@ func_8013460C:
 /* 8013469C 0013127C  7C 08 03 A6 */	mtlr r0
 /* 801346A0 00131280  4E 80 00 20 */	blr 
 
-.global func_801346A4
-func_801346A4:
+.global ftKoopa_SpecialLwAir
+ftKoopa_SpecialLwAir:
 /* 801346A4 00131284  7C 08 02 A6 */	mflr r0
 /* 801346A8 00131288  38 80 01 6A */	li r4, 0x16a
 /* 801346AC 0013128C  90 01 00 04 */	stw r0, 4(r1)
@@ -2625,8 +2625,8 @@ lbl_80134E50:
 /* 80134E50 00131A30  38 21 00 20 */	addi r1, r1, 0x20
 /* 80134E54 00131A34  4E 80 00 20 */	blr 
 
-.global func_80134E58
-func_80134E58:
+.global ftKoopa_SpecialN
+ftKoopa_SpecialN:
 /* 80134E58 00131A38  7C 08 02 A6 */	mflr r0
 /* 80134E5C 00131A3C  38 80 01 55 */	li r4, 0x155
 /* 80134E60 00131A40  90 01 00 04 */	stw r0, 4(r1)
@@ -2658,8 +2658,8 @@ func_80134E58:
 /* 80134EC8 00131AA8  7C 08 03 A6 */	mtlr r0
 /* 80134ECC 00131AAC  4E 80 00 20 */	blr 
 
-.global func_80134ED0
-func_80134ED0:
+.global ftKoopa_SpecialNAir
+ftKoopa_SpecialNAir:
 /* 80134ED0 00131AB0  7C 08 02 A6 */	mflr r0
 /* 80134ED4 00131AB4  38 80 01 58 */	li r4, 0x158
 /* 80134ED8 00131AB8  90 01 00 04 */	stw r0, 4(r1)
@@ -3473,8 +3473,8 @@ lbl_80135A14:
 /* 80135A24 00132604  7C 08 03 A6 */	mtlr r0
 /* 80135A28 00132608  4E 80 00 20 */	blr 
 
-.global func_80135A2C
-func_80135A2C:
+.global ftKoopa_SpecialHi
+ftKoopa_SpecialHi:
 /* 80135A2C 0013260C  7C 08 02 A6 */	mflr r0
 /* 80135A30 00132610  38 80 01 67 */	li r4, 0x167
 /* 80135A34 00132614  90 01 00 04 */	stw r0, 4(r1)

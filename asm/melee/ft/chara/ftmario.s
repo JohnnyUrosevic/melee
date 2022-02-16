@@ -99,8 +99,8 @@ lbl_800E0A00:
 /* 800E0A18 000DD5F8  7C 08 03 A6 */	mtlr r0
 /* 800E0A1C 000DD5FC  4E 80 00 20 */	blr 
 
-.global func_800E0A20
-func_800E0A20:
+.global ftMario_OnItemPickup
+ftMario_OnItemPickup:
 /* 800E0A20 000DD600  7C 08 02 A6 */	mflr r0
 /* 800E0A24 000DD604  90 01 00 04 */	stw r0, 4(r1)
 /* 800E0A28 000DD608  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -165,8 +165,8 @@ lbl_800E0AE4:
 /* 800E0AF8 000DD6D8  7C 08 03 A6 */	mtlr r0
 /* 800E0AFC 000DD6DC  4E 80 00 20 */	blr 
 
-.global func_800E0B00
-func_800E0B00:
+.global ftMario_OnItemInvisible
+ftMario_OnItemInvisible:
 /* 800E0B00 000DD6E0  7C 08 02 A6 */	mflr r0
 /* 800E0B04 000DD6E4  90 01 00 04 */	stw r0, 4(r1)
 /* 800E0B08 000DD6E8  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -187,8 +187,8 @@ lbl_800E0B34:
 /* 800E0B40 000DD720  7C 08 03 A6 */	mtlr r0
 /* 800E0B44 000DD724  4E 80 00 20 */	blr 
 
-.global func_800E0B48
-func_800E0B48:
+.global ftMario_OnItemVisible
+ftMario_OnItemVisible:
 /* 800E0B48 000DD728  7C 08 02 A6 */	mflr r0
 /* 800E0B4C 000DD72C  90 01 00 04 */	stw r0, 4(r1)
 /* 800E0B50 000DD730  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -209,8 +209,8 @@ lbl_800E0B7C:
 /* 800E0B88 000DD768  7C 08 03 A6 */	mtlr r0
 /* 800E0B8C 000DD76C  4E 80 00 20 */	blr 
 
-.global func_800E0B90
-func_800E0B90:
+.global ftMario_OnItemRelease
+ftMario_OnItemRelease:
 /* 800E0B90 000DD770  7C 08 02 A6 */	mflr r0
 /* 800E0B94 000DD774  38 A0 FF FF */	li r5, -1
 /* 800E0B98 000DD778  90 01 00 04 */	stw r0, 4(r1)
@@ -373,8 +373,8 @@ lbl_800E0D78:
 /* 800E0DA0 000DD980  7C 08 03 A6 */	mtlr r0
 /* 800E0DA4 000DD984  4E 80 00 20 */	blr 
 
-.global func_800E0DA8
-func_800E0DA8:
+.global ftMario_SpecialN
+ftMario_SpecialN:
 /* 800E0DA8 000DD988  7C 08 02 A6 */	mflr r0
 /* 800E0DAC 000DD98C  38 80 01 57 */	li r4, 0x157
 /* 800E0DB0 000DD990  90 01 00 04 */	stw r0, 4(r1)
@@ -565,8 +565,8 @@ lbl_800E1024:
 /* 800E1038 000DDC18  7C 08 03 A6 */	mtlr r0
 /* 800E103C 000DDC1C  4E 80 00 20 */	blr 
 
-.global func_800E1040
-func_800E1040:
+.global ftMario_SpecialNAir
+ftMario_SpecialNAir:
 /* 800E1040 000DDC20  7C 08 02 A6 */	mflr r0
 /* 800E1044 000DDC24  38 80 01 58 */	li r4, 0x158
 /* 800E1048 000DDC28  90 01 00 04 */	stw r0, 4(r1)
@@ -902,8 +902,8 @@ ftMario_SpecialS:
 /* 800E14C0 000DE0A0  7C 08 03 A6 */	mtlr r0
 /* 800E14C4 000DE0A4  4E 80 00 20 */	blr 
 
-.global func_800E14C8
-func_800E14C8:
+.global ftMario_SpecialSAir
+ftMario_SpecialSAir:
 /* 800E14C8 000DE0A8  7C 08 02 A6 */	mflr r0
 /* 800E14CC 000DE0AC  38 80 01 5A */	li r4, 0x15a
 /* 800E14D0 000DE0B0  90 01 00 04 */	stw r0, 4(r1)
@@ -1309,8 +1309,8 @@ lbl_800E1A18:
 /* 800E1A4C 000DE62C  7C 08 03 A6 */	mtlr r0
 /* 800E1A50 000DE630  4E 80 00 20 */	blr 
 
-.global func_800E1A54
-func_800E1A54:
+.global ftMario_SpecialHi
+ftMario_SpecialHi:
 /* 800E1A54 000DE634  7C 08 02 A6 */	mflr r0
 /* 800E1A58 000DE638  38 80 01 5B */	li r4, 0x15b
 /* 800E1A5C 000DE63C  90 01 00 04 */	stw r0, 4(r1)
@@ -1773,8 +1773,8 @@ lbl_800E2050:
 /* 800E2074 000DEC54  7C 08 03 A6 */	mtlr r0
 /* 800E2078 000DEC58  4E 80 00 20 */	blr 
 
-.global func_800E207C
-func_800E207C:
+.global ftMario_SpecialLw
+ftMario_SpecialLw:
 /* 800E207C 000DEC5C  7C 08 02 A6 */	mflr r0
 /* 800E2080 000DEC60  38 80 01 5E */	li r4, 0x15e
 /* 800E2084 000DEC64  90 01 00 04 */	stw r0, 4(r1)
@@ -1846,8 +1846,8 @@ func_800E207C:
 /* 800E218C 000DED6C  7C 08 03 A6 */	mtlr r0
 /* 800E2190 000DED70  4E 80 00 20 */	blr 
 
-.global func_800E2194
-func_800E2194:
+.global ftMario_SpecialLwAir
+ftMario_SpecialLwAir:
 /* 800E2194 000DED74  7C 08 02 A6 */	mflr r0
 /* 800E2198 000DED78  38 80 01 5E */	li r4, 0x15e
 /* 800E219C 000DED7C  90 01 00 04 */	stw r0, 4(r1)

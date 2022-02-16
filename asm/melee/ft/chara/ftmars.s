@@ -27,8 +27,8 @@ ftMars_OnDeath:
 /* 801362A8 00132E88  7C 08 03 A6 */	mtlr r0
 /* 801362AC 00132E8C  4E 80 00 20 */	blr 
 
-.global func_801362B0
-func_801362B0:
+.global ftMars_OnItemPickup
+ftMars_OnItemPickup:
 /* 801362B0 00132E90  7C 08 02 A6 */	mflr r0
 /* 801362B4 00132E94  90 01 00 04 */	stw r0, 4(r1)
 /* 801362B8 00132E98  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -93,8 +93,8 @@ lbl_80136374:
 /* 80136388 00132F68  7C 08 03 A6 */	mtlr r0
 /* 8013638C 00132F6C  4E 80 00 20 */	blr 
 
-.global func_80136390
-func_80136390:
+.global ftMars_OnItemInvisible
+ftMars_OnItemInvisible:
 /* 80136390 00132F70  7C 08 02 A6 */	mflr r0
 /* 80136394 00132F74  90 01 00 04 */	stw r0, 4(r1)
 /* 80136398 00132F78  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -115,8 +115,8 @@ lbl_801363C4:
 /* 801363D0 00132FB0  7C 08 03 A6 */	mtlr r0
 /* 801363D4 00132FB4  4E 80 00 20 */	blr 
 
-.global func_801363D8
-func_801363D8:
+.global ftMars_OnItemVisible
+ftMars_OnItemVisible:
 /* 801363D8 00132FB8  7C 08 02 A6 */	mflr r0
 /* 801363DC 00132FBC  90 01 00 04 */	stw r0, 4(r1)
 /* 801363E0 00132FC0  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -137,8 +137,8 @@ lbl_8013640C:
 /* 80136418 00132FF8  7C 08 03 A6 */	mtlr r0
 /* 8013641C 00132FFC  4E 80 00 20 */	blr 
 
-.global func_80136420
-func_80136420:
+.global ftMars_OnItemRelease
+ftMars_OnItemRelease:
 /* 80136420 00133000  7C 08 02 A6 */	mflr r0
 /* 80136424 00133004  38 A0 FF FF */	li r5, -1
 /* 80136428 00133008  90 01 00 04 */	stw r0, 4(r1)
@@ -371,8 +371,8 @@ lbl_80136730:
 /* 8013673C 0013331C  90 03 23 40 */	stw r0, 0x2340(r3)
 /* 80136740 00133320  4E 80 00 20 */	blr 
 
-.global func_80136744
-func_80136744:
+.global ftMars_SpecialN
+ftMars_SpecialN:
 /* 80136744 00133324  7C 08 02 A6 */	mflr r0
 /* 80136748 00133328  38 80 01 55 */	li r4, 0x155
 /* 8013674C 0013332C  90 01 00 04 */	stw r0, 4(r1)
@@ -403,8 +403,8 @@ func_80136744:
 /* 801367B0 00133390  7C 08 03 A6 */	mtlr r0
 /* 801367B4 00133394  4E 80 00 20 */	blr 
 
-.global func_801367B8
-func_801367B8:
+.global ftMars_SpecialNAir
+ftMars_SpecialNAir:
 /* 801367B8 00133398  7C 08 02 A6 */	mflr r0
 /* 801367BC 0013339C  90 01 00 04 */	stw r0, 4(r1)
 /* 801367C0 001333A0  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -1352,8 +1352,8 @@ lbl_80137468:
 /* 80137498 00134078  7C 08 03 A6 */	mtlr r0
 /* 8013749C 0013407C  4E 80 00 20 */	blr 
 
-.global func_801374A0
-func_801374A0:
+.global ftMars_SpecialSAir
+ftMars_SpecialSAir:
 /* 801374A0 00134080  7C 08 02 A6 */	mflr r0
 /* 801374A4 00134084  90 01 00 04 */	stw r0, 4(r1)
 /* 801374A8 00134088  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -2355,8 +2355,8 @@ lbl_801381E0:
 /* 80138200 00134DE0  7C 08 03 A6 */	mtlr r0
 /* 80138204 00134DE4  4E 80 00 20 */	blr 
 
-.global func_80138208
-func_80138208:
+.global ftMars_SpecialHi
+ftMars_SpecialHi:
 /* 80138208 00134DE8  7C 08 02 A6 */	mflr r0
 /* 8013820C 00134DEC  38 80 01 6F */	li r4, 0x16f
 /* 80138210 00134DF0  90 01 00 04 */	stw r0, 4(r1)
@@ -2923,8 +2923,8 @@ lbl_801389BC:
 /* 801389C4 001355A4  7C 08 03 A6 */	mtlr r0
 /* 801389C8 001355A8  4E 80 00 20 */	blr 
 
-.global func_801389CC
-func_801389CC:
+.global ftMars_SpecialLw
+ftMars_SpecialLw:
 /* 801389CC 001355AC  7C 08 02 A6 */	mflr r0
 /* 801389D0 001355B0  38 80 01 71 */	li r4, 0x171
 /* 801389D4 001355B4  90 01 00 04 */	stw r0, 4(r1)
@@ -2951,8 +2951,8 @@ func_801389CC:
 /* 80138A28 00135608  7C 08 03 A6 */	mtlr r0
 /* 80138A2C 0013560C  4E 80 00 20 */	blr 
 
-.global func_80138A30
-func_80138A30:
+.global ftMars_SpecialLwAir
+ftMars_SpecialLwAir:
 /* 80138A30 00135610  7C 08 02 A6 */	mflr r0
 /* 80138A34 00135614  38 80 01 73 */	li r4, 0x173
 /* 80138A38 00135618  90 01 00 04 */	stw r0, 4(r1)

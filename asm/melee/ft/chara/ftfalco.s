@@ -18,8 +18,8 @@ ftFalco_OnDeath:
 /* 80149AF8 001466D8  7C 08 03 A6 */	mtlr r0
 /* 80149AFC 001466DC  4E 80 00 20 */	blr 
 
-.global func_80149B00
-func_80149B00:
+.global ftFalco_OnItemPickup
+ftFalco_OnItemPickup:
 /* 80149B00 001466E0  7C 08 02 A6 */	mflr r0
 /* 80149B04 001466E4  90 01 00 04 */	stw r0, 4(r1)
 /* 80149B08 001466E8  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -84,8 +84,8 @@ lbl_80149BC4:
 /* 80149BD8 001467B8  7C 08 03 A6 */	mtlr r0
 /* 80149BDC 001467BC  4E 80 00 20 */	blr 
 
-.global func_80149BE0
-func_80149BE0:
+.global ftFalco_OnItemInvisible
+ftFalco_OnItemInvisible:
 /* 80149BE0 001467C0  7C 08 02 A6 */	mflr r0
 /* 80149BE4 001467C4  90 01 00 04 */	stw r0, 4(r1)
 /* 80149BE8 001467C8  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -106,8 +106,8 @@ lbl_80149C14:
 /* 80149C20 00146800  7C 08 03 A6 */	mtlr r0
 /* 80149C24 00146804  4E 80 00 20 */	blr 
 
-.global func_80149C28
-func_80149C28:
+.global ftFalco_OnItemVisible
+ftFalco_OnItemVisible:
 /* 80149C28 00146808  7C 08 02 A6 */	mflr r0
 /* 80149C2C 0014680C  90 01 00 04 */	stw r0, 4(r1)
 /* 80149C30 00146810  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -128,8 +128,8 @@ lbl_80149C5C:
 /* 80149C68 00146848  7C 08 03 A6 */	mtlr r0
 /* 80149C6C 0014684C  4E 80 00 20 */	blr 
 
-.global func_80149C70
-func_80149C70:
+.global ftFalco_OnItemRelease
+ftFalco_OnItemRelease:
 /* 80149C70 00146850  7C 08 02 A6 */	mflr r0
 /* 80149C74 00146854  38 A0 FF FF */	li r5, -1
 /* 80149C78 00146858  90 01 00 04 */	stw r0, 4(r1)

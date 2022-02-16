@@ -37,8 +37,8 @@ lbl_80149540:
 /* 80149558 00146138  7C 08 03 A6 */	mtlr r0
 /* 8014955C 0014613C  4E 80 00 20 */	blr 
 
-.global func_80149560
-func_80149560:
+.global ftDrMario_OnItemPickup
+ftDrMario_OnItemPickup:
 /* 80149560 00146140  7C 08 02 A6 */	mflr r0
 /* 80149564 00146144  90 01 00 04 */	stw r0, 4(r1)
 /* 80149568 00146148  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -103,8 +103,8 @@ lbl_80149624:
 /* 80149638 00146218  7C 08 03 A6 */	mtlr r0
 /* 8014963C 0014621C  4E 80 00 20 */	blr 
 
-.global func_80149640
-func_80149640:
+.global ftDrMario_OnItemInvisible
+ftDrMario_OnItemInvisible:
 /* 80149640 00146220  7C 08 02 A6 */	mflr r0
 /* 80149644 00146224  90 01 00 04 */	stw r0, 4(r1)
 /* 80149648 00146228  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -125,8 +125,8 @@ lbl_80149674:
 /* 80149680 00146260  7C 08 03 A6 */	mtlr r0
 /* 80149684 00146264  4E 80 00 20 */	blr 
 
-.global func_80149688
-func_80149688:
+.global ftDrMario_OnItemVisible
+ftDrMario_OnItemVisible:
 /* 80149688 00146268  7C 08 02 A6 */	mflr r0
 /* 8014968C 0014626C  90 01 00 04 */	stw r0, 4(r1)
 /* 80149690 00146270  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -147,8 +147,8 @@ lbl_801496BC:
 /* 801496C8 001462A8  7C 08 03 A6 */	mtlr r0
 /* 801496CC 001462AC  4E 80 00 20 */	blr 
 
-.global func_801496D0
-func_801496D0:
+.global ftDrMario_OnItemRelease
+ftDrMario_OnItemRelease:
 /* 801496D0 001462B0  7C 08 02 A6 */	mflr r0
 /* 801496D4 001462B4  38 A0 FF FF */	li r5, -1
 /* 801496D8 001462B8  90 01 00 04 */	stw r0, 4(r1)

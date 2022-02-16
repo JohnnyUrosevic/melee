@@ -80,8 +80,8 @@ ftPikachu_OnDeath:
 /* 801244B0 00121090  7C 08 03 A6 */	mtlr r0
 /* 801244B4 00121094  4E 80 00 20 */	blr 
 
-.global func_801244B8
-func_801244B8:
+.global ftPikachu_OnItemPickup
+ftPikachu_OnItemPickup:
 /* 801244B8 00121098  7C 08 02 A6 */	mflr r0
 /* 801244BC 0012109C  90 01 00 04 */	stw r0, 4(r1)
 /* 801244C0 001210A0  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -146,8 +146,8 @@ lbl_8012457C:
 /* 80124590 00121170  7C 08 03 A6 */	mtlr r0
 /* 80124594 00121174  4E 80 00 20 */	blr 
 
-.global func_80124598
-func_80124598:
+.global ftPikachu_OnItemInvisible
+ftPikachu_OnItemInvisible:
 /* 80124598 00121178  7C 08 02 A6 */	mflr r0
 /* 8012459C 0012117C  90 01 00 04 */	stw r0, 4(r1)
 /* 801245A0 00121180  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -168,8 +168,8 @@ lbl_801245CC:
 /* 801245D8 001211B8  7C 08 03 A6 */	mtlr r0
 /* 801245DC 001211BC  4E 80 00 20 */	blr 
 
-.global func_801245E0
-func_801245E0:
+.global ftPikachu_OnItemVisible
+ftPikachu_OnItemVisible:
 /* 801245E0 001211C0  7C 08 02 A6 */	mflr r0
 /* 801245E4 001211C4  90 01 00 04 */	stw r0, 4(r1)
 /* 801245E8 001211C8  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -190,8 +190,8 @@ lbl_80124614:
 /* 80124620 00121200  7C 08 03 A6 */	mtlr r0
 /* 80124624 00121204  4E 80 00 20 */	blr 
 
-.global func_80124628
-func_80124628:
+.global ftPikachu_OnItemRelease
+ftPikachu_OnItemRelease:
 /* 80124628 00121208  7C 08 02 A6 */	mflr r0
 /* 8012462C 0012120C  38 A0 FF FF */	li r5, -1
 /* 80124630 00121210  90 01 00 04 */	stw r0, 4(r1)
@@ -340,8 +340,8 @@ func_801247EC:
 /* 80124828 00121408  7C 08 03 A6 */	mtlr r0
 /* 8012482C 0012140C  4E 80 00 20 */	blr 
 
-.global func_80124830
-func_80124830:
+.global ftPikachu_SpecialN
+ftPikachu_SpecialN:
 /* 80124830 00121410  7C 08 02 A6 */	mflr r0
 /* 80124834 00121414  38 80 01 55 */	li r4, 0x155
 /* 80124838 00121418  90 01 00 04 */	stw r0, 4(r1)
@@ -370,8 +370,8 @@ func_80124830:
 /* 80124894 00121474  7C 08 03 A6 */	mtlr r0
 /* 80124898 00121478  4E 80 00 20 */	blr 
 
-.global func_8012489C
-func_8012489C:
+.global ftPikachu_SpecialNAir
+ftPikachu_SpecialNAir:
 /* 8012489C 0012147C  7C 08 02 A6 */	mflr r0
 /* 801248A0 00121480  38 80 01 56 */	li r4, 0x156
 /* 801248A4 00121484  90 01 00 04 */	stw r0, 4(r1)
@@ -798,8 +798,8 @@ ftPikachu_SpecialS:
 /* 80124EA4 00121A84  7C 08 03 A6 */	mtlr r0
 /* 80124EA8 00121A88  4E 80 00 20 */	blr 
 
-.global func_80124EAC
-func_80124EAC:
+.global ftPikachu_SpecialSAir
+ftPikachu_SpecialSAir:
 /* 80124EAC 00121A8C  7C 08 02 A6 */	mflr r0
 /* 80124EB0 00121A90  38 80 01 5C */	li r4, 0x15c
 /* 80124EB4 00121A94  90 01 00 04 */	stw r0, 4(r1)
@@ -1931,8 +1931,8 @@ lbl_80125DD8:
 /* 80125DE0 001229C0  D0 03 23 50 */	stfs f0, 0x2350(r3)
 /* 80125DE4 001229C4  4E 80 00 20 */	blr 
 
-.global func_80125DE8
-func_80125DE8:
+.global ftPikachu_SpecialHi
+ftPikachu_SpecialHi:
 /* 80125DE8 001229C8  7C 08 02 A6 */	mflr r0
 /* 80125DEC 001229CC  38 E0 00 00 */	li r7, 0
 /* 80125DF0 001229D0  90 01 00 04 */	stw r0, 4(r1)
@@ -3839,8 +3839,8 @@ lbl_801278A0:
 /* 801278B4 00124494  7C 08 03 A6 */	mtlr r0
 /* 801278B8 00124498  4E 80 00 20 */	blr 
 
-.global func_801278BC
-func_801278BC:
+.global ftPikachu_SpecialLw
+ftPikachu_SpecialLw:
 /* 801278BC 0012449C  7C 08 02 A6 */	mflr r0
 /* 801278C0 001244A0  38 E0 00 00 */	li r7, 0
 /* 801278C4 001244A4  90 01 00 04 */	stw r0, 4(r1)
@@ -3868,8 +3868,8 @@ func_801278BC:
 /* 8012791C 001244FC  7C 08 03 A6 */	mtlr r0
 /* 80127920 00124500  4E 80 00 20 */	blr 
 
-.global func_80127924
-func_80127924:
+.global ftPikachu_SpecialLwAir
+ftPikachu_SpecialLwAir:
 /* 80127924 00124504  7C 08 02 A6 */	mflr r0
 /* 80127928 00124508  38 E0 00 00 */	li r7, 0
 /* 8012792C 0012450C  90 01 00 04 */	stw r0, 4(r1)

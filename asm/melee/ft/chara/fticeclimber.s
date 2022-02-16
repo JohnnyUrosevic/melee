@@ -2,8 +2,8 @@
 
 .section .text  # 0x80005940 - 0x803B7240
 
-.global func_8011ED38
-func_8011ED38:
+.global ftIceClimber_OnItemPickup
+ftIceClimber_OnItemPickup:
 /* 8011ED38 0011B918  7C 08 02 A6 */	mflr r0
 /* 8011ED3C 0011B91C  90 01 00 04 */	stw r0, 4(r1)
 /* 8011ED40 0011B920  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -68,8 +68,8 @@ lbl_8011EDFC:
 /* 8011EE10 0011B9F0  7C 08 03 A6 */	mtlr r0
 /* 8011EE14 0011B9F4  4E 80 00 20 */	blr 
 
-.global func_8011EE18
-func_8011EE18:
+.global ftIceClimber_OnItemInvisible
+ftIceClimber_OnItemInvisible:
 /* 8011EE18 0011B9F8  7C 08 02 A6 */	mflr r0
 /* 8011EE1C 0011B9FC  90 01 00 04 */	stw r0, 4(r1)
 /* 8011EE20 0011BA00  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -90,8 +90,8 @@ lbl_8011EE4C:
 /* 8011EE58 0011BA38  7C 08 03 A6 */	mtlr r0
 /* 8011EE5C 0011BA3C  4E 80 00 20 */	blr 
 
-.global func_8011EE60
-func_8011EE60:
+.global ftIceClimber_OnItemVisible
+ftIceClimber_OnItemVisible:
 /* 8011EE60 0011BA40  7C 08 02 A6 */	mflr r0
 /* 8011EE64 0011BA44  90 01 00 04 */	stw r0, 4(r1)
 /* 8011EE68 0011BA48  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -112,8 +112,8 @@ lbl_8011EE94:
 /* 8011EEA0 0011BA80  7C 08 03 A6 */	mtlr r0
 /* 8011EEA4 0011BA84  4E 80 00 20 */	blr 
 
-.global func_8011EEA8
-func_8011EEA8:
+.global ftIceClimber_OnItemRelease
+ftIceClimber_OnItemRelease:
 /* 8011EEA8 0011BA88  7C 08 02 A6 */	mflr r0
 /* 8011EEAC 0011BA8C  38 A0 FF FF */	li r5, -1
 /* 8011EEB0 0011BA90  90 01 00 04 */	stw r0, 4(r1)
@@ -357,8 +357,8 @@ lbl_8011F1E0:
 /* 8011F1F0 0011BDD0  7C 08 03 A6 */	mtlr r0
 /* 8011F1F4 0011BDD4  4E 80 00 20 */	blr 
 
-.global func_8011F1F8
-func_8011F1F8:
+.global ftIceClimber_SpecialN
+ftIceClimber_SpecialN:
 /* 8011F1F8 0011BDD8  7C 08 02 A6 */	mflr r0
 /* 8011F1FC 0011BDDC  38 80 01 55 */	li r4, 0x155
 /* 8011F200 0011BDE0  90 01 00 04 */	stw r0, 4(r1)
@@ -389,8 +389,8 @@ func_8011F1F8:
 /* 8011F264 0011BE44  7C 08 03 A6 */	mtlr r0
 /* 8011F268 0011BE48  4E 80 00 20 */	blr 
 
-.global func_8011F26C
-func_8011F26C:
+.global ftIceClimber_SpecialNAir
+ftIceClimber_SpecialNAir:
 /* 8011F26C 0011BE4C  7C 08 02 A6 */	mflr r0
 /* 8011F270 0011BE50  90 01 00 04 */	stw r0, 4(r1)
 /* 8011F274 0011BE54  38 00 00 00 */	li r0, 0
@@ -1014,8 +1014,8 @@ lbl_8011FA6C:
 /* 8011FB00 0011C6E0  7C 08 03 A6 */	mtlr r0
 /* 8011FB04 0011C6E4  4E 80 00 20 */	blr 
 
-.global func_8011FB08
-func_8011FB08:
+.global ftIceClimber_SpecialSAir
+ftIceClimber_SpecialSAir:
 /* 8011FB08 0011C6E8  7C 08 02 A6 */	mflr r0
 /* 8011FB0C 0011C6EC  38 80 00 01 */	li r4, 1
 /* 8011FB10 0011C6F0  90 01 00 04 */	stw r0, 4(r1)
@@ -2624,8 +2624,8 @@ lbl_801211A0:
 /* 801211AC 0011DD8C  7C 08 03 A6 */	mtlr r0
 /* 801211B0 0011DD90  4E 80 00 20 */	blr 
 
-.global func_801211B4
-func_801211B4:
+.global ftIceClimber_SpecialHi
+ftIceClimber_SpecialHi:
 /* 801211B4 0011DD94  7C 08 02 A6 */	mflr r0
 /* 801211B8 0011DD98  90 01 00 04 */	stw r0, 4(r1)
 /* 801211BC 0011DD9C  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -4332,8 +4332,8 @@ lbl_801228F0:
 /* 801228FC 0011F4DC  7C 08 03 A6 */	mtlr r0
 /* 80122900 0011F4E0  4E 80 00 20 */	blr 
 
-.global func_80122904
-func_80122904:
+.global ftIceClimber_SpecialLw
+ftIceClimber_SpecialLw:
 /* 80122904 0011F4E4  7C 08 02 A6 */	mflr r0
 /* 80122908 0011F4E8  38 E0 00 00 */	li r7, 0
 /* 8012290C 0011F4EC  90 01 00 04 */	stw r0, 4(r1)
@@ -4368,8 +4368,8 @@ func_80122904:
 /* 80122980 0011F560  7C 08 03 A6 */	mtlr r0
 /* 80122984 0011F564  4E 80 00 20 */	blr 
 
-.global func_80122988
-func_80122988:
+.global ftIceClimber_SpecialLwAir
+ftIceClimber_SpecialLwAir:
 /* 80122988 0011F568  7C 08 02 A6 */	mflr r0
 /* 8012298C 0011F56C  38 E0 00 00 */	li r7, 0
 /* 80122990 0011F570  90 01 00 04 */	stw r0, 4(r1)

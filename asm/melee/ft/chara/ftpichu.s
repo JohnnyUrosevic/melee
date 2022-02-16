@@ -122,8 +122,8 @@ lbl_80149FCC:
 /* 80149FDC 00146BBC  7C 08 03 A6 */	mtlr r0
 /* 80149FE0 00146BC0  4E 80 00 20 */	blr 
 
-.global func_80149FE4
-func_80149FE4:
+.global ftPichu_OnItemPickup
+ftPichu_OnItemPickup:
 /* 80149FE4 00146BC4  7C 08 02 A6 */	mflr r0
 /* 80149FE8 00146BC8  90 01 00 04 */	stw r0, 4(r1)
 /* 80149FEC 00146BCC  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -188,8 +188,8 @@ lbl_8014A0A8:
 /* 8014A0BC 00146C9C  7C 08 03 A6 */	mtlr r0
 /* 8014A0C0 00146CA0  4E 80 00 20 */	blr 
 
-.global func_8014A0C4
-func_8014A0C4:
+.global ftPichu_OnItemInvisible
+ftPichu_OnItemInvisible:
 /* 8014A0C4 00146CA4  7C 08 02 A6 */	mflr r0
 /* 8014A0C8 00146CA8  90 01 00 04 */	stw r0, 4(r1)
 /* 8014A0CC 00146CAC  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -210,8 +210,8 @@ lbl_8014A0F8:
 /* 8014A104 00146CE4  7C 08 03 A6 */	mtlr r0
 /* 8014A108 00146CE8  4E 80 00 20 */	blr 
 
-.global func_8014A10C
-func_8014A10C:
+.global ftPichu_OnItemVisible
+ftPichu_OnItemVisible:
 /* 8014A10C 00146CEC  7C 08 02 A6 */	mflr r0
 /* 8014A110 00146CF0  90 01 00 04 */	stw r0, 4(r1)
 /* 8014A114 00146CF4  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -232,8 +232,8 @@ lbl_8014A140:
 /* 8014A14C 00146D2C  7C 08 03 A6 */	mtlr r0
 /* 8014A150 00146D30  4E 80 00 20 */	blr 
 
-.global func_8014A154
-func_8014A154:
+.global ftPichu_OnItemRelease
+ftPichu_OnItemRelease:
 /* 8014A154 00146D34  7C 08 02 A6 */	mflr r0
 /* 8014A158 00146D38  38 A0 FF FF */	li r5, -1
 /* 8014A15C 00146D3C  90 01 00 04 */	stw r0, 4(r1)

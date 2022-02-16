@@ -2374,8 +2374,8 @@ ftNess_SpecialS:
 /* 80116CFC 001138DC  7C 08 03 A6 */	mtlr r0
 /* 80116D00 001138E0  4E 80 00 20 */	blr 
 
-.global func_80116D04
-func_80116D04:
+.global ftNess_SpecialSAir
+ftNess_SpecialSAir:
 /* 80116D04 001138E4  7C 08 02 A6 */	mflr r0
 /* 80116D08 001138E8  38 80 01 65 */	li r4, 0x165
 /* 80116D0C 001138EC  90 01 00 04 */	stw r0, 4(r1)
@@ -2571,8 +2571,8 @@ lbl_80116F80:
 /* 80116F8C 00113B6C  7C 08 03 A6 */	mtlr r0
 /* 80116F90 00113B70  4E 80 00 20 */	blr 
 
-.global func_80116F94
-func_80116F94:
+.global ftNess_SpecialN
+ftNess_SpecialN:
 /* 80116F94 00113B74  7C 08 02 A6 */	mflr r0
 /* 80116F98 00113B78  38 80 01 5C */	li r4, 0x15c
 /* 80116F9C 00113B7C  90 01 00 04 */	stw r0, 4(r1)
@@ -2614,8 +2614,8 @@ func_80116F94:
 /* 8011702C 00113C0C  7C 08 03 A6 */	mtlr r0
 /* 80117030 00113C10  4E 80 00 20 */	blr 
 
-.global func_80117034
-func_80117034:
+.global ftNess_SpecialNAir
+ftNess_SpecialNAir:
 /* 80117034 00113C14  7C 08 02 A6 */	mflr r0
 /* 80117038 00113C18  38 80 01 60 */	li r4, 0x160
 /* 8011703C 00113C1C  90 01 00 04 */	stw r0, 4(r1)
@@ -3850,8 +3850,8 @@ lbl_801180D0:
 /* 80118118 00114CF8  7C 08 03 A6 */	mtlr r0
 /* 8011811C 00114CFC  4E 80 00 20 */	blr 
 
-.global func_80118120
-func_80118120:
+.global ftNess_SpecialHi
+ftNess_SpecialHi:
 /* 80118120 00114D00  7C 08 02 A6 */	mflr r0
 /* 80118124 00114D04  38 80 01 66 */	li r4, 0x166
 /* 80118128 00114D08  90 01 00 04 */	stw r0, 4(r1)
@@ -5896,8 +5896,8 @@ lbl_80119DF8:
 /* 80119E0C 001169EC  7C 08 03 A6 */	mtlr r0
 /* 80119E10 001169F0  4E 80 00 20 */	blr 
 
-.global func_80119E14
-func_80119E14:
+.global ftNess_SpecialLw
+ftNess_SpecialLw:
 /* 80119E14 001169F4  7C 08 02 A6 */	mflr r0
 /* 80119E18 001169F8  38 E0 00 00 */	li r7, 0
 /* 80119E1C 001169FC  90 01 00 04 */	stw r0, 4(r1)
@@ -5930,8 +5930,8 @@ func_80119E14:
 /* 80119E88 00116A68  7C 08 03 A6 */	mtlr r0
 /* 80119E8C 00116A6C  4E 80 00 20 */	blr 
 
-.global func_80119E90
-func_80119E90:
+.global ftNess_SpecialLwAir
+ftNess_SpecialLwAir:
 /* 80119E90 00116A70  7C 08 02 A6 */	mflr r0
 /* 80119E94 00116A74  38 E0 00 00 */	li r7, 0
 /* 80119E98 00116A78  90 01 00 04 */	stw r0, 4(r1)
