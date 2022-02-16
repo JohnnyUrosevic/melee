@@ -67,8 +67,8 @@ ftGKoopa_OnLoad:
 /* 8014F718 0014C2F8  7C 08 03 A6 */	mtlr r0
 /* 8014F71C 0014C2FC  4E 80 00 20 */	blr 
 
-.global func_8014F720
-func_8014F720:
+.global ftGKoopa_OnItemPickup
+ftGKoopa_OnItemPickup:
 /* 8014F720 0014C300  7C 08 02 A6 */	mflr r0
 /* 8014F724 0014C304  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F728 0014C308  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -133,8 +133,8 @@ lbl_8014F7E4:
 /* 8014F7F8 0014C3D8  7C 08 03 A6 */	mtlr r0
 /* 8014F7FC 0014C3DC  4E 80 00 20 */	blr 
 
-.global func_8014F800
-func_8014F800:
+.global ftGKoopa_OnItemInvisible
+ftGKoopa_OnItemInvisible:
 /* 8014F800 0014C3E0  7C 08 02 A6 */	mflr r0
 /* 8014F804 0014C3E4  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F808 0014C3E8  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -155,8 +155,8 @@ lbl_8014F834:
 /* 8014F840 0014C420  7C 08 03 A6 */	mtlr r0
 /* 8014F844 0014C424  4E 80 00 20 */	blr 
 
-.global func_8014F848
-func_8014F848:
+.global ftGKoopa_OnItemVisible
+ftGKoopa_OnItemVisible:
 /* 8014F848 0014C428  7C 08 02 A6 */	mflr r0
 /* 8014F84C 0014C42C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F850 0014C430  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -177,8 +177,8 @@ lbl_8014F87C:
 /* 8014F888 0014C468  7C 08 03 A6 */	mtlr r0
 /* 8014F88C 0014C46C  4E 80 00 20 */	blr 
 
-.global func_8014F890
-func_8014F890:
+.global ftGKoopa_OnItemRelease
+ftGKoopa_OnItemRelease:
 /* 8014F890 0014C470  7C 08 02 A6 */	mflr r0
 /* 8014F894 0014C474  38 A0 FF FF */	li r5, -1
 /* 8014F898 0014C478  90 01 00 04 */	stw r0, 4(r1)

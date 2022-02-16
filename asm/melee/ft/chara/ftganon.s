@@ -28,8 +28,8 @@ ftGanon_OnDeath:
 /* 8014EC50 0014B830  7C 08 03 A6 */	mtlr r0
 /* 8014EC54 0014B834  4E 80 00 20 */	blr 
 
-.global func_8014EC58
-func_8014EC58:
+.global ftGanon_OnItemPickup
+ftGanon_OnItemPickup:
 /* 8014EC58 0014B838  7C 08 02 A6 */	mflr r0
 /* 8014EC5C 0014B83C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014EC60 0014B840  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -94,8 +94,8 @@ lbl_8014ED1C:
 /* 8014ED30 0014B910  7C 08 03 A6 */	mtlr r0
 /* 8014ED34 0014B914  4E 80 00 20 */	blr 
 
-.global func_8014ED38
-func_8014ED38:
+.global ftGanon_OnItemInvisible
+ftGanon_OnItemInvisible:
 /* 8014ED38 0014B918  7C 08 02 A6 */	mflr r0
 /* 8014ED3C 0014B91C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014ED40 0014B920  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -116,8 +116,8 @@ lbl_8014ED6C:
 /* 8014ED78 0014B958  7C 08 03 A6 */	mtlr r0
 /* 8014ED7C 0014B95C  4E 80 00 20 */	blr 
 
-.global func_8014ED80
-func_8014ED80:
+.global ftGanon_OnItemVisible
+ftGanon_OnItemVisible:
 /* 8014ED80 0014B960  7C 08 02 A6 */	mflr r0
 /* 8014ED84 0014B964  90 01 00 04 */	stw r0, 4(r1)
 /* 8014ED88 0014B968  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -138,8 +138,8 @@ lbl_8014EDB4:
 /* 8014EDC0 0014B9A0  7C 08 03 A6 */	mtlr r0
 /* 8014EDC4 0014B9A4  4E 80 00 20 */	blr 
 
-.global func_8014EDC8
-func_8014EDC8:
+.global ftGanon_OnItemRelease
+ftGanon_OnItemRelease:
 /* 8014EDC8 0014B9A8  7C 08 02 A6 */	mflr r0
 /* 8014EDCC 0014B9AC  38 A0 FF FF */	li r5, -1
 /* 8014EDD0 0014B9B0  90 01 00 04 */	stw r0, 4(r1)

@@ -88,8 +88,8 @@ lbl_80128428:
 /* 8012845C 0012503C  7C 08 03 A6 */	mtlr r0
 /* 80128460 00125040  4E 80 00 20 */	blr 
 
-.global func_80128464
-func_80128464:
+.global ftSamus_OnItemPickup
+ftSamus_OnItemPickup:
 /* 80128464 00125044  7C 08 02 A6 */	mflr r0
 /* 80128468 00125048  90 01 00 04 */	stw r0, 4(r1)
 /* 8012846C 0012504C  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -154,8 +154,8 @@ lbl_80128528:
 /* 8012853C 0012511C  7C 08 03 A6 */	mtlr r0
 /* 80128540 00125120  4E 80 00 20 */	blr 
 
-.global func_80128544
-func_80128544:
+.global ftSamus_OnItemInvisible
+ftSamus_OnItemInvisible:
 /* 80128544 00125124  7C 08 02 A6 */	mflr r0
 /* 80128548 00125128  90 01 00 04 */	stw r0, 4(r1)
 /* 8012854C 0012512C  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -176,8 +176,8 @@ lbl_80128578:
 /* 80128584 00125164  7C 08 03 A6 */	mtlr r0
 /* 80128588 00125168  4E 80 00 20 */	blr 
 
-.global func_8012858C
-func_8012858C:
+.global ftSamus_OnItemVisible
+ftSamus_OnItemVisible:
 /* 8012858C 0012516C  7C 08 02 A6 */	mflr r0
 /* 80128590 00125170  90 01 00 04 */	stw r0, 4(r1)
 /* 80128594 00125174  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -198,8 +198,8 @@ lbl_801285C0:
 /* 801285CC 001251AC  7C 08 03 A6 */	mtlr r0
 /* 801285D0 001251B0  4E 80 00 20 */	blr 
 
-.global func_801285D4
-func_801285D4:
+.global ftSamus_OnItemRelease
+ftSamus_OnItemRelease:
 /* 801285D4 001251B4  7C 08 02 A6 */	mflr r0
 /* 801285D8 001251B8  38 A0 FF FF */	li r5, -1
 /* 801285DC 001251BC  90 01 00 04 */	stw r0, 4(r1)
@@ -1316,8 +1316,8 @@ lbl_8012952C:
 /* 80129544 00126124  7C 08 03 A6 */	mtlr r0
 /* 80129548 00126128  4E 80 00 20 */	blr 
 
-.global func_8012954C
-func_8012954C:
+.global ftSamus_SpecialN
+ftSamus_SpecialN:
 /* 8012954C 0012612C  7C 08 02 A6 */	mflr r0
 /* 80129550 00126130  38 80 01 57 */	li r4, 0x157
 /* 80129554 00126134  90 01 00 04 */	stw r0, 4(r1)
@@ -1360,8 +1360,8 @@ func_8012954C:
 /* 801295E8 001261C8  7C 08 03 A6 */	mtlr r0
 /* 801295EC 001261CC  4E 80 00 20 */	blr 
 
-.global func_801295F0
-func_801295F0:
+.global ftSamus_SpecialNAir
+ftSamus_SpecialNAir:
 /* 801295F0 001261D0  7C 08 02 A6 */	mflr r0
 /* 801295F4 001261D4  38 80 01 5B */	li r4, 0x15b
 /* 801295F8 001261D8  90 01 00 04 */	stw r0, 4(r1)
@@ -2274,8 +2274,8 @@ lbl_8012A280:
 /* 8012A2A4 00126E84  7C 08 03 A6 */	mtlr r0
 /* 8012A2A8 00126E88  4E 80 00 20 */	blr 
 
-.global func_8012A2AC
-func_8012A2AC:
+.global ftSamus_SpecialSAir
+ftSamus_SpecialSAir:
 /* 8012A2AC 00126E8C  7C 08 02 A6 */	mflr r0
 /* 8012A2B0 00126E90  90 01 00 04 */	stw r0, 4(r1)
 /* 8012A2B4 00126E94  3C 00 43 30 */	lis r0, 0x4330
@@ -2564,8 +2564,8 @@ func_8012A640:
 /* 8012A66C 0012724C  7C 08 03 A6 */	mtlr r0
 /* 8012A670 00127250  4E 80 00 20 */	blr 
 
-.global func_8012A674
-func_8012A674:
+.global ftSamus_SpecialHi
+ftSamus_SpecialHi:
 /* 8012A674 00127254  7C 08 02 A6 */	mflr r0
 /* 8012A678 00127258  38 80 01 61 */	li r4, 0x161
 /* 8012A67C 0012725C  90 01 00 04 */	stw r0, 4(r1)
@@ -3195,8 +3195,8 @@ func_8012AF38:
 /* 8012AF54 00127B34  7C 08 03 A6 */	mtlr r0
 /* 8012AF58 00127B38  4E 80 00 20 */	blr 
 
-.global func_8012AF5C
-func_8012AF5C:
+.global ftSamus_SpecialLw
+ftSamus_SpecialLw:
 /* 8012AF5C 00127B3C  7C 08 02 A6 */	mflr r0
 /* 8012AF60 00127B40  90 01 00 04 */	stw r0, 4(r1)
 /* 8012AF64 00127B44  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -3282,8 +3282,8 @@ lbl_8012B084:
 /* 8012B094 00127C74  7C 08 03 A6 */	mtlr r0
 /* 8012B098 00127C78  4E 80 00 20 */	blr 
 
-.global func_8012B09C
-func_8012B09C:
+.global ftSamus_SpecialLwAir
+ftSamus_SpecialLwAir:
 /* 8012B09C 00127C7C  7C 08 02 A6 */	mflr r0
 /* 8012B0A0 00127C80  38 80 01 64 */	li r4, 0x164
 /* 8012B0A4 00127C84  90 01 00 04 */	stw r0, 4(r1)

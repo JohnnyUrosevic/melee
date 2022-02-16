@@ -26,8 +26,8 @@ ftZakoGirl_OnLoad:
 /* 8014F458 0014C038  90 85 02 D4 */	stw r4, 0x2d4(r5)
 /* 8014F45C 0014C03C  4E 80 00 20 */	blr 
 
-.global func_8014F460
-func_8014F460:
+.global ftZakoGirl_OnItemPickup
+ftZakoGirl_OnItemPickup:
 /* 8014F460 0014C040  7C 08 02 A6 */	mflr r0
 /* 8014F464 0014C044  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F468 0014C048  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -92,8 +92,8 @@ lbl_8014F524:
 /* 8014F538 0014C118  7C 08 03 A6 */	mtlr r0
 /* 8014F53C 0014C11C  4E 80 00 20 */	blr 
 
-.global func_8014F540
-func_8014F540:
+.global ftZakoGirl_OnItemInvisible
+ftZakoGirl_OnItemInvisible:
 /* 8014F540 0014C120  7C 08 02 A6 */	mflr r0
 /* 8014F544 0014C124  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F548 0014C128  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -114,8 +114,8 @@ lbl_8014F574:
 /* 8014F580 0014C160  7C 08 03 A6 */	mtlr r0
 /* 8014F584 0014C164  4E 80 00 20 */	blr 
 
-.global func_8014F588
-func_8014F588:
+.global ftZakoGirl_OnItemVisible
+ftZakoGirl_OnItemVisible:
 /* 8014F588 0014C168  7C 08 02 A6 */	mflr r0
 /* 8014F58C 0014C16C  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F590 0014C170  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -136,8 +136,8 @@ lbl_8014F5BC:
 /* 8014F5C8 0014C1A8  7C 08 03 A6 */	mtlr r0
 /* 8014F5CC 0014C1AC  4E 80 00 20 */	blr 
 
-.global func_8014F5D0
-func_8014F5D0:
+.global ftZakoGirl_OnItemRelease
+ftZakoGirl_OnItemRelease:
 /* 8014F5D0 0014C1B0  7C 08 02 A6 */	mflr r0
 /* 8014F5D4 0014C1B4  38 A0 FF FF */	li r5, -1
 /* 8014F5D8 0014C1B8  90 01 00 04 */	stw r0, 4(r1)

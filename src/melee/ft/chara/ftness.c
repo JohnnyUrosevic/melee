@@ -99,7 +99,7 @@ f32 func_8011495C(Fighter* ft)
 }
 #pragma pop
 
-asm void func_80114968(HSD_GObj* gobj)
+asm void ftNess_OnItemPickup(HSD_GObj* gobj)
 {
     nofralloc
 /* 80114968 00111548  7C 08 02 A6 */	mflr r0
@@ -169,7 +169,7 @@ lbl_80114A2C:
 
 #pragma push
 #pragma peephole on
-void func_80114A48(HSD_GObj* gobj)
+void ftNess_OnItemInvisible(HSD_GObj* gobj)
 {
     Fighter* ft = gobj->user_data;
 
@@ -178,7 +178,7 @@ void func_80114A48(HSD_GObj* gobj)
     }
 }
 
-void func_80114A90(HSD_GObj* gobj)
+void ftNess_OnItemVisible(HSD_GObj* gobj)
 {
     Fighter* ft = gobj->user_data;
 
@@ -187,7 +187,7 @@ void func_80114A90(HSD_GObj* gobj)
     }
 }
 
-void func_80114AD8(HSD_GObj* gobj, s32 arg1)
+void ftNess_OnItemRelease(HSD_GObj* gobj, s32 arg1)
 {
     func_80070FB4(gobj, 1, -1);
     if (arg1 != 0) {

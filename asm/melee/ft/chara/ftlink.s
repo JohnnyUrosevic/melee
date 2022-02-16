@@ -165,8 +165,8 @@ func_800EAF58:
 /* 800EAF9C 000E7B7C  7C 08 03 A6 */	mtlr r0
 /* 800EAFA0 000E7B80  4E 80 00 20 */	blr 
 
-.global func_800EAFA4
-func_800EAFA4:
+.global ftLink_OnItemPickup
+ftLink_OnItemPickup:
 /* 800EAFA4 000E7B84  7C 08 02 A6 */	mflr r0
 /* 800EAFA8 000E7B88  90 01 00 04 */	stw r0, 4(r1)
 /* 800EAFAC 000E7B8C  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -190,7 +190,7 @@ lbl_800EAFE4:
 /* 800EAFF0 000E7BD0  4B F8 9A 5D */	bl func_80074A4C
 /* 800EAFF4 000E7BD4  38 7E 00 00 */	addi r3, r30, 0
 /* 800EAFF8 000E7BD8  38 9F 00 00 */	addi r4, r31, 0
-/* 800EAFFC 000E7BDC  48 00 01 21 */	bl func_800EB11C
+/* 800EAFFC 000E7BDC  48 00 01 21 */	bl ftLink_OnItemCatch
 /* 800EB000 000E7BE0  80 01 00 24 */	lwz r0, 0x24(r1)
 /* 800EB004 000E7BE4  83 E1 00 1C */	lwz r31, 0x1c(r1)
 /* 800EB008 000E7BE8  83 C1 00 18 */	lwz r30, 0x18(r1)
@@ -198,8 +198,8 @@ lbl_800EAFE4:
 /* 800EB010 000E7BF0  7C 08 03 A6 */	mtlr r0
 /* 800EB014 000E7BF4  4E 80 00 20 */	blr 
 
-.global func_800EB018
-func_800EB018:
+.global ftLink_OnItemInvisible
+ftLink_OnItemInvisible:
 /* 800EB018 000E7BF8  7C 08 02 A6 */	mflr r0
 /* 800EB01C 000E7BFC  90 01 00 04 */	stw r0, 4(r1)
 /* 800EB020 000E7C00  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -220,8 +220,8 @@ lbl_800EB04C:
 /* 800EB058 000E7C38  7C 08 03 A6 */	mtlr r0
 /* 800EB05C 000E7C3C  4E 80 00 20 */	blr 
 
-.global func_800EB060
-func_800EB060:
+.global ftLink_OnItemVisible
+ftLink_OnItemVisible:
 /* 800EB060 000E7C40  7C 08 02 A6 */	mflr r0
 /* 800EB064 000E7C44  90 01 00 04 */	stw r0, 4(r1)
 /* 800EB068 000E7C48  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -242,8 +242,8 @@ lbl_800EB094:
 /* 800EB0A0 000E7C80  7C 08 03 A6 */	mtlr r0
 /* 800EB0A4 000E7C84  4E 80 00 20 */	blr 
 
-.global func_800EB0A8
-func_800EB0A8:
+.global ftLink_OnItemRelease
+ftLink_OnItemRelease:
 /* 800EB0A8 000E7C88  7C 08 02 A6 */	mflr r0
 /* 800EB0AC 000E7C8C  90 01 00 04 */	stw r0, 4(r1)
 /* 800EB0B0 000E7C90  94 21 FF E0 */	stwu r1, -0x20(r1)
@@ -275,8 +275,8 @@ lbl_800EB0E8:
 /* 800EB114 000E7CF4  7C 08 03 A6 */	mtlr r0
 /* 800EB118 000E7CF8  4E 80 00 20 */	blr 
 
-.global func_800EB11C
-func_800EB11C:
+.global ftLink_OnItemCatch
+ftLink_OnItemCatch:
 /* 800EB11C 000E7CFC  7C 08 02 A6 */	mflr r0
 /* 800EB120 000E7D00  90 01 00 04 */	stw r0, 4(r1)
 /* 800EB124 000E7D04  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -653,8 +653,8 @@ func_800EB618:
 /* 800EB654 000E8234  7C 08 03 A6 */	mtlr r0
 /* 800EB658 000E8238  4E 80 00 20 */	blr 
 
-.global func_800EB65C
-func_800EB65C:
+.global ftLink_SpecialLw
+ftLink_SpecialLw:
 /* 800EB65C 000E823C  7C 08 02 A6 */	mflr r0
 /* 800EB660 000E8240  38 80 00 6C */	li r4, 0x6c
 /* 800EB664 000E8244  90 01 00 04 */	stw r0, 4(r1)
@@ -689,8 +689,8 @@ lbl_800EB6C4:
 /* 800EB6D4 000E82B4  7C 08 03 A6 */	mtlr r0
 /* 800EB6D8 000E82B8  4E 80 00 20 */	blr 
 
-.global func_800EB6DC
-func_800EB6DC:
+.global ftLink_SpecialLwAir
+ftLink_SpecialLwAir:
 /* 800EB6DC 000E82BC  7C 08 02 A6 */	mflr r0
 /* 800EB6E0 000E82C0  38 80 00 70 */	li r4, 0x70
 /* 800EB6E4 000E82C4  90 01 00 04 */	stw r0, 4(r1)
@@ -1003,8 +1003,8 @@ lbl_800EBAE4:
 /* 800EBB14 000E86F4  7C 08 03 A6 */	mtlr r0
 /* 800EBB18 000E86F8  4E 80 00 20 */	blr 
 
-.global func_800EBB1C
-func_800EBB1C:
+.global ftLink_SpecialHi
+ftLink_SpecialHi:
 /* 800EBB1C 000E86FC  7C 08 02 A6 */	mflr r0
 /* 800EBB20 000E8700  38 80 01 64 */	li r4, 0x164
 /* 800EBB24 000E8704  90 01 00 04 */	stw r0, 4(r1)
@@ -1669,8 +1669,8 @@ lbl_800EC3D8:
 /* 800EC3FC 000E8FDC  7C 08 03 A6 */	mtlr r0
 /* 800EC400 000E8FE0  4E 80 00 20 */	blr 
 
-.global func_800EC404
-func_800EC404:
+.global ftLink_SpecialSAir
+ftLink_SpecialSAir:
 /* 800EC404 000E8FE4  7C 08 02 A6 */	mflr r0
 /* 800EC408 000E8FE8  38 80 00 00 */	li r4, 0
 /* 800EC40C 000E8FEC  90 01 00 04 */	stw r0, 4(r1)
@@ -2414,8 +2414,8 @@ lbl_800ECD94:
 /* 800ECDA4 000E9984  7C 08 03 A6 */	mtlr r0
 /* 800ECDA8 000E9988  4E 80 00 20 */	blr 
 
-.global func_800ECDAC
-func_800ECDAC:
+.global ftLink_SpecialN
+ftLink_SpecialN:
 /* 800ECDAC 000E998C  7C 08 02 A6 */	mflr r0
 /* 800ECDB0 000E9990  90 01 00 04 */	stw r0, 4(r1)
 /* 800ECDB4 000E9994  94 21 FF 98 */	stwu r1, -0x68(r1)
@@ -2538,8 +2538,8 @@ lbl_800ECF64:
 /* 800ECF70 000E9B50  7C 08 03 A6 */	mtlr r0
 /* 800ECF74 000E9B54  4E 80 00 20 */	blr 
 
-.global func_800ECF78
-func_800ECF78:
+.global ftLink_SpecialNAir
+ftLink_SpecialNAir:
 /* 800ECF78 000E9B58  7C 08 02 A6 */	mflr r0
 /* 800ECF7C 000E9B5C  38 80 01 5B */	li r4, 0x15b
 /* 800ECF80 000E9B60  90 01 00 04 */	stw r0, 4(r1)

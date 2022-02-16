@@ -286,8 +286,8 @@ lbl_800EE904:
 /* 800EE90C 000EB4EC  7C 08 03 A6 */	mtlr r0
 /* 800EE910 000EB4F0  4E 80 00 20 */	blr 
 
-.global func_800EE914
-func_800EE914:
+.global ftKirby_OnItemPickup
+ftKirby_OnItemPickup:
 /* 800EE914 000EB4F4  7C 08 02 A6 */	mflr r0
 /* 800EE918 000EB4F8  90 01 00 04 */	stw r0, 4(r1)
 /* 800EE91C 000EB4FC  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -345,8 +345,8 @@ lbl_800EE9C0:
 /* 800EE9D4 000EB5B4  7C 08 03 A6 */	mtlr r0
 /* 800EE9D8 000EB5B8  4E 80 00 20 */	blr 
 
-.global func_800EE9DC
-func_800EE9DC:
+.global ftKirby_OnItemInvisible
+ftKirby_OnItemInvisible:
 /* 800EE9DC 000EB5BC  7C 08 02 A6 */	mflr r0
 /* 800EE9E0 000EB5C0  90 01 00 04 */	stw r0, 4(r1)
 /* 800EE9E4 000EB5C4  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -367,8 +367,8 @@ lbl_800EEA10:
 /* 800EEA1C 000EB5FC  7C 08 03 A6 */	mtlr r0
 /* 800EEA20 000EB600  4E 80 00 20 */	blr 
 
-.global func_800EEA24
-func_800EEA24:
+.global ftKirby_OnItemVisible
+ftKirby_OnItemVisible:
 /* 800EEA24 000EB604  7C 08 02 A6 */	mflr r0
 /* 800EEA28 000EB608  90 01 00 04 */	stw r0, 4(r1)
 /* 800EEA2C 000EB60C  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -389,8 +389,8 @@ lbl_800EEA58:
 /* 800EEA64 000EB644  7C 08 03 A6 */	mtlr r0
 /* 800EEA68 000EB648  4E 80 00 20 */	blr 
 
-.global func_800EEA6C
-func_800EEA6C:
+.global ftKirby_OnItemRelease
+ftKirby_OnItemRelease:
 /* 800EEA6C 000EB64C  7C 08 02 A6 */	mflr r0
 /* 800EEA70 000EB650  38 A0 FF FF */	li r5, -1
 /* 800EEA74 000EB654  90 01 00 04 */	stw r0, 4(r1)
@@ -3520,8 +3520,8 @@ lbl_800F15D8:
 /* 800F1628 000EE208  7C 08 03 A6 */	mtlr r0
 /* 800F162C 000EE20C  4E 80 00 20 */	blr 
 
-.global func_800F1630
-func_800F1630:
+.global ftKirby_SpecialN
+ftKirby_SpecialN:
 /* 800F1630 000EE210  7C 08 02 A6 */	mflr r0
 /* 800F1634 000EE214  3C 80 80 3D */	lis r4, lbl_803C9DD0@ha
 /* 800F1638 000EE218  90 01 00 04 */	stw r0, 4(r1)
@@ -3545,8 +3545,8 @@ lbl_800F1670:
 /* 800F1678 000EE258  7C 08 03 A6 */	mtlr r0
 /* 800F167C 000EE25C  4E 80 00 20 */	blr 
 
-.global func_800F1680
-func_800F1680:
+.global ftKirby_SpecialNAir
+ftKirby_SpecialNAir:
 /* 800F1680 000EE260  7C 08 02 A6 */	mflr r0
 /* 800F1684 000EE264  3C 80 80 3D */	lis r4, lbl_803C9E54@ha
 /* 800F1688 000EE268  90 01 00 04 */	stw r0, 4(r1)
@@ -4538,8 +4538,8 @@ func_800F22D4:
 /* 800F22F8 000EEED8  7C 08 03 A6 */	mtlr r0
 /* 800F22FC 000EEEDC  4E 80 00 20 */	blr 
 
-.global func_800F2300
-func_800F2300:
+.global ftKirby_SpecialHi
+ftKirby_SpecialHi:
 /* 800F2300 000EEEE0  7C 08 02 A6 */	mflr r0
 /* 800F2304 000EEEE4  38 80 01 81 */	li r4, 0x181
 /* 800F2308 000EEEE8  90 01 00 04 */	stw r0, 4(r1)
@@ -6399,8 +6399,8 @@ lbl_800F3CE0:
 /* 800F3D48 000F0928  7C 08 03 A6 */	mtlr r0
 /* 800F3D4C 000F092C  4E 80 00 20 */	blr 
 
-.global func_800F3D50
-func_800F3D50:
+.global ftKirby_SpecialLw
+ftKirby_SpecialLw:
 /* 800F3D50 000F0930  7C 08 02 A6 */	mflr r0
 /* 800F3D54 000F0934  90 01 00 04 */	stw r0, 4(r1)
 /* 800F3D58 000F0938  38 00 FF FF */	li r0, -1
@@ -6472,8 +6472,8 @@ func_800F3D50:
 /* 800F3E60 000F0A40  7C 08 03 A6 */	mtlr r0
 /* 800F3E64 000F0A44  4E 80 00 20 */	blr 
 
-.global func_800F3E68
-func_800F3E68:
+.global ftKirby_SpecialLwAir
+ftKirby_SpecialLwAir:
 /* 800F3E68 000F0A48  7C 08 02 A6 */	mflr r0
 /* 800F3E6C 000F0A4C  90 01 00 04 */	stw r0, 4(r1)
 /* 800F3E70 000F0A50  38 00 FF FF */	li r0, -1
@@ -8070,8 +8070,8 @@ ftKirby_SpecialS:
 /* 800F55C8 000F21A8  7C 08 03 A6 */	mtlr r0
 /* 800F55CC 000F21AC  4E 80 00 20 */	blr 
 
-.global func_800F55D0
-func_800F55D0:
+.global ftKirby_SpecialSAir
+ftKirby_SpecialSAir:
 /* 800F55D0 000F21B0  7C 08 02 A6 */	mflr r0
 /* 800F55D4 000F21B4  90 01 00 04 */	stw r0, 4(r1)
 /* 800F55D8 000F21B8  38 00 00 00 */	li r0, 0

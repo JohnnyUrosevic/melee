@@ -15,8 +15,8 @@ ftZakoBoy_OnDeath:
 /* 8014F210 0014BDF0  7C 08 03 A6 */	mtlr r0
 /* 8014F214 0014BDF4  4E 80 00 20 */	blr 
 
-.global func_8014F218
-func_8014F218:
+.global ftZakoBoy_OnItemPickup
+ftZakoBoy_OnItemPickup:
 /* 8014F218 0014BDF8  7C 08 02 A6 */	mflr r0
 /* 8014F21C 0014BDFC  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F220 0014BE00  94 21 FF D8 */	stwu r1, -0x28(r1)
@@ -81,8 +81,8 @@ lbl_8014F2DC:
 /* 8014F2F0 0014BED0  7C 08 03 A6 */	mtlr r0
 /* 8014F2F4 0014BED4  4E 80 00 20 */	blr 
 
-.global func_8014F2F8
-func_8014F2F8:
+.global ftZakoBoy_OnItemInvisible
+ftZakoBoy_OnItemInvisible:
 /* 8014F2F8 0014BED8  7C 08 02 A6 */	mflr r0
 /* 8014F2FC 0014BEDC  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F300 0014BEE0  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -103,8 +103,8 @@ lbl_8014F32C:
 /* 8014F338 0014BF18  7C 08 03 A6 */	mtlr r0
 /* 8014F33C 0014BF1C  4E 80 00 20 */	blr 
 
-.global func_8014F340
-func_8014F340:
+.global ftZakoBoy_OnItemVisible
+ftZakoBoy_OnItemVisible:
 /* 8014F340 0014BF20  7C 08 02 A6 */	mflr r0
 /* 8014F344 0014BF24  90 01 00 04 */	stw r0, 4(r1)
 /* 8014F348 0014BF28  94 21 FF E8 */	stwu r1, -0x18(r1)
@@ -125,8 +125,8 @@ lbl_8014F374:
 /* 8014F380 0014BF60  7C 08 03 A6 */	mtlr r0
 /* 8014F384 0014BF64  4E 80 00 20 */	blr 
 
-.global func_8014F388
-func_8014F388:
+.global ftZakoBoy_OnItemRelease
+ftZakoBoy_OnItemRelease:
 /* 8014F388 0014BF68  7C 08 02 A6 */	mflr r0
 /* 8014F38C 0014BF6C  38 A0 FF FF */	li r5, -1
 /* 8014F390 0014BF70  90 01 00 04 */	stw r0, 4(r1)
