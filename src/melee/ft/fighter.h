@@ -117,7 +117,8 @@ typedef struct _Fighter {
     u8 xD;
     u8 xE;
     u8 xF;
-    u8 data_filler_x10[0x2C - 0x10];
+    u32 x10;
+    u8 data_filler_x10[0x2C - 0x14];
     float x2C_facing_direction;
     u8 filler_x2C[0xB0 - 0x30];
     /* 0xB0 */ Vec3 xB0_pos;
@@ -172,8 +173,12 @@ typedef struct _Fighter {
     /* 0x2110 */ f32 x2110_walljumpWallSide;
     u8 filler_x2110[0x213C - 0x2114];
     /* 0x213C */ u32 x213C;
-    u8 filler_x213C[0x2200 - 0x2140];
-    /* 0x2200 */ u32 x2200_ftcmd_var0;
+    u8 filler_x2114[0x21DC - 0x2140];
+    /* 0x21DC */ u32 x21DC;
+    /* 0x21E0 */ u32 x21E0;
+    /* 0x21E4 */ u32 x21E4;
+    u8 filler_x2138[0x2200 - 0x21E8];
+	  /* 0x2200 */ u32 x2200_ftcmd_var0;
     /* 0x2204 */ u32 x2200_ftcmd_var1;
     /* 0x2208 */ u32 x2200_ftcmd_var2;
     /* 0x220C */ u32 x2200_ftcmd_var3;
