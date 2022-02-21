@@ -9,16 +9,24 @@ typedef struct _Unk {
 
 extern Unk* lbl_804D782C;
 
-void func_80081140(void)
-{
+void func_80081118(void) {
     HSD_GObj* gobj = lbl_804D782C->data;
 
-    while (gobj != 0U) {
-        gobj->render_cb = &func_80080C28;
+    while (gobj != NULL) {
+        gobj->render_cb = &func_80080E18;
         gobj = gobj->next;
     }
 }
 
+void func_80081140(void)
+{
+    HSD_GObj* gobj = lbl_804D782C->data;
+
+    while (gobj != NULL) {
+        gobj->render_cb = &func_80080C28;
+        gobj = gobj->next;
+    }
+}
 
 void func_80081168(void)
 {
