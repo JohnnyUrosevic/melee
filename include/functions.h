@@ -1282,7 +1282,7 @@ void func_80074A4C(struct _HSD_GObj*, u32, s32);
 // ? func_8007500C(?);
 // ? func_80075028(?);
 // ? func_8007506C(?);
-// ? func_800750C8(?);
+void func_800750C8(void*, u32, u32);
 // ? func_80075240(?);
 // ? func_80075304(?);
 // ? func_800753D4(?);
