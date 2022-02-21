@@ -9,6 +9,25 @@ typedef struct _Unk {
 
 extern Unk* lbl_804D782C;
 
+void func_80081168(void)
+{
+    HSD_GObj* gobj = lbl_804D782C->data;
+    Fighter* fighter = gobj->user_data; // why load this twice?
+
+    u32 unused[3];
+
+    while (gobj != NULL) {
+        fighter = gobj->user_data;
+        if (fighter->x5BC != 0U) {
+            func_800750C8(fighter, 1, 0);
+            func_800750C8(fighter, 2, 0);
+            func_800750C8(fighter, 4, 0);
+            func_800750C8(fighter, 0, 1);
+        }
+        gobj = gobj->next;
+    }
+}
+
 void func_80081200(void)
 {
     HSD_GObj* gobj = lbl_804D782C->data;
