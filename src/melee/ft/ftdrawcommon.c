@@ -9,11 +9,11 @@ typedef struct _Unk {
 } Unk;
 
 typedef struct _Unk2 {
-    u8 x0_filler[0x14];
-    u32 x14;
-    u8 x18_filler[0x44-0x18];
-    u32 x44;
-    u8 x48_filler[0x6C-0x3C];
+    u8 x0_filler[0xC];
+    u32 xC;
+    u8 x18_filler[0x38-0xC];
+    u32 x38;
+    u8 x48_filler[0x68-0x3C];
 } Unk2;
 
 extern Unk* lbl_804D782C;
@@ -42,34 +42,12 @@ void func_80080E18(HSD_GObj* gobj, s32 arg1) {
 
                 func_800310B8();
                 matrix = func_80369808();
-                PSMTXMultiVec(matrix, &fighter->x2350_stateVar5, &fighter2->xB0_pos);
+                PSMTXMUltiVec(matrix, &fighter->x2350_stateVar5, &fighter2->xB0_pos);
                 pos = &fighter2->xB0_pos;
-                if (jobj == NULL) {
-                    __assert("jobj.h", 0x394, "jobj");
-                }
-                if (pos == NULL) {
-                    __assert("jobj.h", 0x395, "translate");
-                }
-                __memcpy(&jobj->translate.x, &pos->x, 8);
-                __memcpy(&jobj->translate.z, &pos->z, 4);
 
-                if ((jobj->flags & 0x02000000) == 0 && jobj != NULL) { 
-                    if (jobj == NULL) // why...
-                    {
-                        __assert("jobj.h", 0x234, "jobj");
-                    }
-
-                    flags = jobj->flags;
-                    arg2 = 0;
-                    if (((flags & 0x800000) == 0) && ((flags & 0x40) != 0)) {
-                        arg2 = 1;
-                    }
-                    if (arg2 == 0) {
-                        HSD_JObjSetMtxDirtySub(jobj, jobj->flags);
-                    }
-                }
+                HSD_JObjSetTranslate(jobj, pos);
             }
-            if (fighter->x5C8 != 0U) {
+            if (fighter->x5C8 != NULL) {
                 fighter = gobj->user_data;
                 if ((fighter->x21FC_flag.bits.b7) != 0) {
                     if ((fighter->x221E_flag.bits.b0 == 0) && (fighter->x221E_flag.bits.b5 == 0) && (fighter->x2226_flag.bits.b5 == 0)) {
@@ -81,7 +59,7 @@ void func_80080E18(HSD_GObj* gobj, s32 arg1) {
                         fighter->x2223_flag.bits.b3 = 0;
                         fighter = (Fighter*) gobj->hsd_obj;
                         ret = func_80390EB8(arg1);
-                        arg2 = func_8008051C(gobj, &sp54.x44);
+                        arg2 = func_8008051C(gobj, &sp54.x38);
                         func_803709DC(fighter, arg2, ret, 0);
                     }
                 }
@@ -97,7 +75,7 @@ void func_80080E18(HSD_GObj* gobj, s32 arg1) {
                         fighter->x2223_flag.bits.b3 = 1;
                         fighter = (Fighter*) gobj->hsd_obj;
                         ret = func_80390EB8(arg1);
-                        arg2 = func_8008051C(gobj, &sp54.x14);
+                        arg2 = func_8008051C(gobj, &sp54.xC);
                         func_803709DC(fighter, arg2, ret, 0);
                     }
                 }
@@ -112,7 +90,6 @@ void func_80080E18(HSD_GObj* gobj, s32 arg1) {
                 arg2 = 1;
             }
             func_800805C8(gobj, arg1, arg2);
-            break;
         }
     }
 }
