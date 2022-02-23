@@ -136,7 +136,9 @@ typedef struct _Fighter {
     /* 0x2D8 */ void* x2D8_specialAttributes2;
     u8 filler_x2D8[0x5BC - 0x2DC];
     /* 0x5BC */ u32 x5BC;
-    u8 filler_x5BC[0x5E8 - 0x5C0];
+    u8 filler_x5BC[0x5C8 - 0x5C0];
+    /* 0x5C8 */ u32 x5C8;
+    u8 filler_x5C8[0x5E8 - 0x5CC];
     /* 0x5E8 */ FighterBone* x5E8_fighterBones;
     u8 filler_x5E8[0x60C - 0x5EC];
     /* 0x60C */ void* x60C;
@@ -179,8 +181,9 @@ typedef struct _Fighter {
     /* 0x21DC */ u32 x21DC;
     /* 0x21E0 */ u32 x21E0;
     /* 0x21E4 */ u32 x21E4;
-    u8 filler_x2138[0x2200 - 0x21E8];
-	  /* 0x2200 */ u32 x2200_ftcmd_var0;
+    u8 filler_x2138[0x21FC - 0x21E8];
+    /* 0x21FC */ UnkFlagStruct x21FC_flag;
+	/* 0x2200 */ u32 x2200_ftcmd_var0;
     /* 0x2204 */ u32 x2200_ftcmd_var1;
     /* 0x2208 */ u32 x2200_ftcmd_var2;
     /* 0x220C */ u32 x2200_ftcmd_var3;
@@ -189,12 +192,12 @@ typedef struct _Fighter {
     /* 0x2218 */ u32 x2218;
     /* 0x221C */ u8 x221C;
     UnkFlagStruct x221D_flag;
-    u8 filler_x221E;
+    UnkFlagStruct x221E_flag;
     UnkFlagStruct x221F_flag;
-    u8 filler_x2220;
+    UnkFlagStruct x2220_flag;
     u8 filler_x2221;
     /* 0x2222 */ UnkFlagStruct x2222_flag;
-    u8 filler_x2223;
+    /* 0x2223 */ UnkFlagStruct x2223_flag;
     /* 0x2224 */ UnkFlagStruct x2224_flag;
     u8 filler_x2225;
     /* 0x2226 */ UnkFlagStruct x2226_flag;
