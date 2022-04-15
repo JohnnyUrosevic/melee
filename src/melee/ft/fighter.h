@@ -137,7 +137,7 @@ typedef struct _Fighter {
     u8 filler_x2D8[0x5BC - 0x2DC];
     /* 0x5BC */ u32 x5BC;
     u8 filler_x5BC[0x5C8 - 0x5C0];
-    /* 0x5C8 */ u32 x5C8;
+    /* 0x5C8 */ void* x5C8;
     u8 filler_x5C8[0x5E8 - 0x5CC];
     /* 0x5E8 */ FighterBone* x5E8_fighterBones;
     u8 filler_x5E8[0x60C - 0x5EC];

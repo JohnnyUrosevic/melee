@@ -9,6 +9,8 @@
 
 #include "melee/ft/fighter.h"
 
+MtxPtr func_8008051C(HSD_GObj* gobj, MtxPtr arg2);
+
 void func_80080C28(HSD_GObj* arg0, s32 arg1);
 void func_80080E18(HSD_GObj* arg0, s32 arg1);
 
