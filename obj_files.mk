@@ -56,7 +56,6 @@ TEXT_O_FILES := 						            \
 	$(BUILD_DIR)/asm/melee/ft/code_8007C114.o 		\
 	$(BUILD_DIR)/asm/melee/ft/code_8007C630.o 		\
 	$(BUILD_DIR)/asm/melee/ft/ftcommon.o 			\
-	$(BUILD_DIR)/asm/melee/ft/ftdrawcommon.o 		\
 	$(BUILD_DIR)/src/melee/ft/ftdrawcommon.o 		\
 	$(BUILD_DIR)/src/melee/ft/ftcliffcommon.o 		\
 	$(BUILD_DIR)/src/melee/ft/ftwalljump.o 			\
