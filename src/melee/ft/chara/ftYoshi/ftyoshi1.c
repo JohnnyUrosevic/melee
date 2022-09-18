@@ -35,7 +35,7 @@ void lbl_8012C030(HSD_GObj* fighter_gobj) {
     }
 }
 
-void lbl_8012C114(s32 fighter_gobj) {
+void lbl_8012C114(HSD_GObj* fighter_gobj) {
     if (!func_80093694() &&
         !func_8009515C(fighter_gobj) &&
         !func_80099794(fighter_gobj) &&
@@ -169,5 +169,15 @@ void lbl_8012C2F4(HSD_GObj* fighter_gobj) {
     }
     else {
         func_8012B8A4(fighter_gobj);
+    }
+}
+
+void lbl_8012C3EC(HSD_GObj* fighter_gobj) {
+    if (!func_8009515C(fighter_gobj) &&
+		!func_80099794(fighter_gobj) &&
+		!func_8009917C(fighter_gobj) &&
+		!func_800D8990(fighter_gobj) &&
+		!func_8009A080(fighter_gobj)) {
+        return;
     }
 }
