@@ -181,3 +181,11 @@ void lbl_8012C3EC(HSD_GObj* fighter_gobj) {
         return;
     }
 }
+
+void lbl_8012C45C(void) {
+    func_80092B70();
+}
+
+void lbl_8012C47C(void) {
+    func_80092BAC();
+}
