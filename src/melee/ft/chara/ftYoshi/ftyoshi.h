@@ -38,3 +38,4 @@ struct S_UNK_YOSHI1 {
 
 void func_8012B6E8(Fighter* fp, struct S_UNK_YOSHI1* unk_struct_arg);
 void func_8012B804(Fighter* fp, struct S_UNK_YOSHI1* unk_struct_arg, f32 start_frame);
+void func_8012C49C(HSD_GObj* fighter_gobj);

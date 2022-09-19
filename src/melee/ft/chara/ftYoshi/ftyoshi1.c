@@ -189,3 +189,25 @@ void lbl_8012C45C(void) {
 void lbl_8012C47C(void) {
     func_80092BAC();
 }
+
+void func_8012C49C(HSD_GObj* fighter_gobj) {
+    Fighter* fp;
+    s32* x1CC;
+    s32 bone_idx;
+    Fighter* fp2;
+    HSD_JObj* jobj;
+    u32 unused[4];
+
+    f32 temp_f1 = lbl_804D9A2C;
+    Fighter_ActionStateChange_800693AC(fighter_gobj, 0x157, 0, NULL, temp_f1, lbl_804D9A28, temp_f1);
+
+    fp = fighter_gobj->user_data;
+    func_80074B0C(fighter_gobj, 0, 0);
+    func_8007B0C0(fighter_gobj, 0);
+
+    x1CC = &fp->x110_attr.x1CC;
+    bone_idx = func_8007500C(fp, 4);
+    fp2 = fighter_gobj->user_data;
+    jobj = fp->x5E8_fighterBones[bone_idx].x0_jobj;
+    efAsync_Spawn(fighter_gobj, &fp2->x60C, 4U, 0x4CF, jobj, x1CC);
+}
